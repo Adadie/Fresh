@@ -1,17 +1,39 @@
 body {
-  background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/Pics/darkbgr.jpg");
-}
-#title {
-  text-align: center;
-  color: White;
-  
-  vertical-align: middle;
-}
-p {
-  color: red;
+  background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");
 }
 .navigation{
-	align-content: right;
+  float: left top;
+  align-content: left;
+  display: inline-block;
+  background-color: grey;
+  width: 100%;
+  height: 65%;
+  padding: 14px 18px;
+}
+ a{
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  border-right: 1px solid white;
+  text-decoration-style: bold;
+}
+a:hover {
+  color: white;
+  background-color: black;
+}
+#title {
+line-height: 40px;
+  text-align: center;
+  color: white;
+  padding: 200px 0px;
+}
+
+#Home{
+  align-content: center;
+  padding: 12px;
+  text-decoration: none;
+  border-right: 1px solid white;
+  text-decoration-style: bold;
 }
 .dropdown{
 	float: right;
@@ -49,6 +71,7 @@ p {
  	 }
  	 .aboutcontents a:hover{
  	 	background-color: #ddd;
+    text-decoration: line-through; 
  	 }
  	 .dropdown:hover .aboutcontents{
  	 display: block;
