@@ -1,7 +1,51 @@
 body {
   background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");
+  margin: 0;
+  padding: 0;
 }
-.navigation{
+.group{
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+header{
+  background-color: grey;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  min-height: 50px;
+  border-bottom-color: white;
+  border-bottom-width: 100%;
+  border-bottom-style: solid;
+}
+header .name h1{
+  float: left;
+  float: bottom;
+  margin: 0;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: ;
+  font-weight: bold;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+header li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header nav{
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+}
+
+/*.navigation{
   float: left top;
   align-content: left;
   display: inline-block;
@@ -10,7 +54,7 @@ body {
   height: 65%;
   padding: 14px 18px;
 }
- a{
+ /a{
   padding: 12px;
   text-decoration: none;
   color: black;
@@ -27,14 +71,21 @@ line-height: 40px;
   color: white;
   padding: 200px 0px;
 }
-
-#Home{
-  align-content: center;
-  padding: 12px;
-  text-decoration: none;
-  border-right: 1px solid white;
-  text-decoration-style: bold;
+ul{
+  list-style-type: none;
+  display: inline-block;
+  float: none;
 }
+.profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+  opacity: 1;
+
+}
+
 .dropdown{
 	float: right;
   overflow: hidden;
