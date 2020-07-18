@@ -3,46 +3,80 @@ body {
   margin: 0;
   padding: 0;
 }
+/*The whole header div*/
 .group{
   margin: auto;
   overflow: hidden;
   width: 80%;
 }
+/*Header tag*/
 header{
   background-color: grey;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 0;
-  min-height: 50px;
+  min-height: 70px;
   border-bottom-color: white;
   border-bottom-width: 100%;
   border-bottom-style: solid;
 }
+/*Name with h1*/
 header .name h1{
   float: left;
-  float: bottom;
   margin: 0;
 }
+/*All link tags in header*/
 header a{
   text-decoration: none;
   color: black;
   font-size: 20px;
-  font-family: ;
+  font-family: sans-serif;
   font-weight: bold;
 }
+/*all ul*/
 ul{
   margin: 0;
   padding: 0;
 }
+/* All li in header*/
 header li{
   display: inline;
   padding: 0 20px 0 20px;
 }
+/*Navigation in header*/
 header nav{
   float: right;
   margin-top: 15px;
   margin-bottom: 0;
 
+}
+.dropdown{
+  display: none;
+}
+ nav ul li:hover{
+  background-color: green;
+  display: inline-block;
+  text-decoration: line-through;
+}
+.group nav ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-right: 20px;
+}
+.group nav ul li:hover .dropdown ul{
+  display: block;
+  margin: 10px;
+}
+.group nav ul li:hover .dropdown ul li{
+  display: block;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.5
+  width: 150px;
+  padding: 10px;
+  text-align: left;
 }
 
 /*.navigation{
