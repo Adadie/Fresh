@@ -1,29 +1,33 @@
 body {
   background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 /*The whole header div*/
 .group{
-  margin: auto;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
   overflow: hidden;
   width: 80%;
 }
-/*Header tag*/
+/*Header tag, it will change background, margin,height & padding*/
 header{
   background-color: grey;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 0;
-  min-height: 70px;
-  border-bottom-color: white;
+  min-height: 20px;
+  border-bottom-color: brown;
   border-bottom-width: 100%;
   border-bottom-style: solid;
 }
-/*Name with h1*/
+/*This will change the h1 properties*/
 header .name h1{
   float: left;
   margin: 0;
+  padding: 5px;
 }
 /*All link tags in header*/
 header a{
@@ -32,18 +36,21 @@ header a{
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
+  margin: 0;
+  padding: 0px;
 }
 /*all ul*/
 ul{
   margin: 0;
   padding: 0;
 }
-/* All li in header*/
+/* line all li in header*/
 header li{
   display: inline;
   padding: 0 20px 0 20px;
+  margin: 0;
 }
-/*Navigation in header*/
+/*send navigation bar to right*/
 header nav{
   float: right;
   margin-top: 15px;
@@ -78,6 +85,77 @@ header nav{
   padding: 10px;
   text-align: left;
 }
+/*Title*/
+#title {
+line-height: 40px;
+  text-align: center;
+  color: white;
+  padding: 200px 0px;
+}
+ /*pic with intro*/
+.intro{
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width: 100%;
+  opacity: 1;
+}
+.intro ul li .profile{
+  width: 20%;
+  position: relative;
+  height: 250px;
+  top: -200px;
+  right: -130px;
+  border-radius: 20px;
+  background-size: 80% 100%;
+  border: 20px solid black;
+}
+.intro ul li{
+  display: inline;
+}
+.intro ul li h2{
+  display: inline-block;
+  position: relative;
+  right: -150px; 
+  top: -350px;
+  padding: 0px 0px;
+  width: 600px;
+  font-size: 250%;
+}
+/*footer*/
+footer{
+  background-color: grey;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  min-height: 30px;
+  border-top-color: brown;
+  border-top-width: 100%;
+  border-top-style: solid;
+}
+footer h2{
+  position: absolute;
+  margin: 0;
+  padding: 0px;
+  margin-left: 90px;
+  font-style: italic;
+}
+footer img{
+  width: 30px;
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  padding-bottom: 0px;
+  padding-right: 120px;
+  top: 5px;
+  right: -500px;
+  border: none;
+}
+footer h2 img{
+  display: inline;
+  margin: 0;
+  padding: 0px;
+}
 
 /*.navigation{
   float: left top;
@@ -99,27 +177,12 @@ a:hover {
   color: white;
   background-color: black;
 }
-#title {
-line-height: 40px;
-  text-align: center;
-  color: white;
-  padding: 200px 0px;
-}
+
 ul{
   list-style-type: none;
   display: inline-block;
   float: none;
 }
-.profile{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border-radius: 8px;
-  opacity: 1;
-
-}
-
 .dropdown{
 	float: right;
   overflow: hidden;
