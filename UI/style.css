@@ -1,5 +1,6 @@
 body {
-  background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");
+  /*background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");*/
+  background-color: #101820;
   margin: 0 0 0 0;
   padding: 0;
 }
@@ -15,13 +16,13 @@ body {
 /*Header tag, it will change background, margin,height & padding*/
 header{
   background-color: grey;
-  margin: 0;
-  padding-top: 0px;
-  padding-bottom: 0;
-  min-height: 20px;
+  margin: auto;
+  padding: 0px;
+  min-height: 40px;
   border-bottom-color: brown;
   border-bottom-width: 100%;
   border-bottom-style: solid;
+
 }
 /*This will change the h1 properties*/
 header .name h1{
@@ -85,42 +86,44 @@ header nav{
   padding: 10px;
   text-align: left;
 }
-/*Title*/
+/*Center title and change its color*/
 #title {
-line-height: 40px;
+line-height: 30px;
   text-align: center;
-  color: white;
-  padding: 200px 0px;
+  color: #F2AA4C;
+  padding-top: 200px;
+  font-size: 30px;
 }
  /*pic with intro*/
 .intro{
-  display: block;
-  margin-left: 0px;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 40px;
+  float: right;
   width: 100%;
   opacity: 1;
 }
 .intro ul li .profile{
   width: 20%;
-  position: relative;
-  height: 250px;
-  top: -200px;
-  right: -130px;
+  float: right;
+  padding: 0px;
+  margin-right: 40px;
   border-radius: 20px;
-  background-size: 80% 100%;
+  background-size: 100% 100%;
   border: 20px solid black;
 }
 .intro ul li{
   display: inline;
 }
 .intro ul li h2{
-  display: inline-block;
-  position: relative;
-  right: -150px; 
-  top: -350px;
-  padding: 0px 0px;
+  display: flex;
   width: 600px;
+  color: white;
   font-size: 250%;
+  float: right;
+}
+.resume{
+  padding-left: 300px; 
+  margin-left: 300px;
 }
 /*footer*/
 footer{
@@ -136,7 +139,8 @@ footer{
 footer h2{
   position: absolute;
   margin: 0;
-  padding: 0px;
+  padding-left: 100px;
+  padding-top: 5px;
   margin-left: 90px;
   font-style: italic;
 }
@@ -156,6 +160,160 @@ footer h2 img{
   margin: 0;
   padding: 0px;
 }
+/*Beginning of blog page css*/
+#blog {
+  line-height: 60px;
+  text-align: center;
+  color: #F2AA4C;
+  padding: 50px 0px;
+  text-decoration: underline; 
+}
+.blogs h1{
+  line-height: 60px;
+  text-align: left;
+  color: orange;
+  font-size: 36px;
+  padding: 20px;
+}
+.blogs p{
+  color: white;
+}
+/*Blog 1*/
+
+.blogs{
+  display: flex;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+.blogs .figma{
+  padding: 20px;
+}
+.blogs .figma .figmaimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .figma p{
+  width: 200px; 
+}
+/*blog 2*/
+.blogs{
+  margin-left: auto;
+  padding: 0px;
+  overflow: hidden;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+  .blogs h5{
+  color: orange;
+  padding: 10px;
+}
+.blogs .github{
+  padding: 20px;
+}
+.blogs .github .githubimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .github p{
+  width: 200px;
+  }
+  /*blog 3*/
+   .blogs{
+  margin-left: auto;
+  padding: 0px;
+  overflow: hidden;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+.blogs .photoshop{
+  padding: 20px;
+}
+.blogs .photoshop .photoshopimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .photoshop p{
+  width: 200px;
+  }
+  .blogs .sketch{
+  padding: 20px;
+}
+.blogs .sketch .sketchimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .sketch p{
+  width: 200px;
+  }
+  .blogs .blog1{
+    text-align: center;
+    padding-left: 40px;
+  }
+.blogs .blog2{
+    text-align: center;
+    padding-left: 60px;
+  }
+  .blogs .blog3{
+    text-align: center;
+    padding-left: 60px;
+  }
+  .blogs .blog4{
+    text-align: center;
+    padding-left: 60px;
+  }
+  /*Article Section*/
+  .articles{
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+  }
+  .articles h1{
+    color: orange;
+    font-size: 36px;
+    padding-right: 20px;
+  }
+  .articles h2{
+    color: white;
+    font-size: 20px;
+  }
+  .articles h5{
+    color: orange;
+    font-size: 10px;
+  }
+  .articles p{
+    color: white;
+  }
+  .articles .article1{
+    padding: 20px;
+  }
+  .articles .article2{
+    padding: 20px;
+  }
+  .article .article1 p{
+    width: 300px;
+    height: 500px;
+  }
+  .article .article2 p{
+    width: 300px;
+    height: 500px;
+  }
+  .subscribe{
+    padding-left: 300px;
+    margin-left: 200px;
+  }
+  #subscribelbl{
+    color: white;
+    font-size: 20px;
+    align-content: center;
+  }
+
 
 /*.navigation{
   float: left top;
