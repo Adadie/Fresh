@@ -4,6 +4,11 @@ body {
   margin: 0 0 0 0;
   padding: 0;
 }
+/**{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}*/
 /*The whole header div*/
 .group{
   margin-left: 50px;
@@ -18,17 +23,22 @@ header{
   background-color: grey;
   margin: auto;
   padding: 0px;
+  width: 100%;
   min-height: 40px;
   border-bottom-color: brown;
   border-bottom-width: 100%;
   border-bottom-style: solid;
-
+  position: fixed;
 }
 /*This will change the h1 properties*/
 header .name h1{
   float: left;
   margin: 0;
   padding: 5px;
+  font-size: 30px
+}
+header .name h1 #J{
+  font-size: 40px
 }
 /*All link tags in header*/
 header a{
@@ -47,7 +57,7 @@ ul{
 }
 /* line all li in header*/
 header li{
-  display: inline;
+  display: inline-flex;
   padding: 0 20px 0 20px;
   margin: 0;
 }
@@ -62,9 +72,13 @@ header nav{
   display: none;
 }
  nav ul li:hover{
-  background-color: green;
   display: inline-block;
   text-decoration: line-through;
+  color: white;
+}
+nav ul li a:hover{
+  color: orange;
+  font-size: 25px;
 }
 .group nav ul li:hover .dropdown {
   display: block;
@@ -313,8 +327,103 @@ footer h2 img{
     font-size: 20px;
     align-content: center;
   }
-
-
+  /*Beginning of login page*/
+  .login{
+    padding:0px;
+    margin-left: 400px;
+    margin-bottom: 200px;
+  }
+  #namelbl{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+  }
+   #pswdlbl{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+  }
+  #loginbtn{
+    width: 40%;
+    margin: 20px;
+    margin-left: 150px;
+    border-radius: 50%;
+  }
+  #loginbtn:hover{
+    background-color: green;
+    cursor: pointer;
+  }
+  #namebox{
+    width: 40%;
+    margin: 20px;
+    opacity: 0.7;
+  }
+  #pswdbox{
+    width: 40%;
+    margin: 25px;
+    opacity: 0.7;
+  }
+  .login a{
+    color: white;
+    margin: 20px;
+  }
+  .signup{
+    margin: 20px;
+  }
+  #signuplbl{
+    color: white;
+  }
+  #signupbtn:hover{
+    background-color: green;
+    cursor: pointer;
+  } 
+    /*Beginning Of Sign Up Page*/
+  .register label{
+    color: white;
+    font-size: 20px;
+    margin: 0px 40px 20px 20px ;
+    display: block;
+    padding-right: 20px; 
+  }
+  .register #reginputbox{
+    width: 200px;
+    height: 20px;
+  }
+  .register p{
+    display: flex;
+  }
+  .register{
+    margin: 0px 0px 0px 450px;
+      }
+  .register  #emaillbl{
+        margin-left: 65px;
+      }
+  .register  #regpswdlbl{
+        margin-left: 35px;
+      }
+  #regbtn{
+        border-radius: 15%;
+        margin-left: 180px;
+        width: 210px;
+        height: 30px;
+      }
+  #regbtn:hover{
+        background-color: green; 
+        height: 33px;
+        cursor: pointer;
+      }
+      .loginreg{
+        display: flex;
+      }
+      #logbtn{
+        height: 20px;
+        width: 60px;
+        margin: 0;
+      }
+      #logbtn:hover{
+        height: 25px;
+        background-color: green;
+      }
 /*.navigation{
   float: left top;
   align-content: left;
