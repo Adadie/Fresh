@@ -24,6 +24,7 @@ header{
   margin: auto;
   padding: 0px;
   width: 100%;
+  margin: 0px;
   min-height: 40px;
   border-bottom-color: brown;
   border-bottom-width: 100%;
@@ -36,6 +37,12 @@ header .name h1{
   margin: 0;
   padding: 5px;
   font-size: 30px
+}
+header #usericon{
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
 }
 header .name h1 #J{
   font-size: 40px
@@ -66,7 +73,7 @@ header nav{
   float: right;
   margin-top: 15px;
   margin-bottom: 0;
-
+  display: inline-flex;
 }
 .dropdown{
   display: none;
@@ -80,16 +87,12 @@ nav ul li a:hover{
   color: orange;
   font-size: 25px;
 }
-.group nav ul li:hover .dropdown {
+.group nav ul li:hover .dropdown{
   display: block;
   position: absolute;
   margin-right: 15px;
   margin-left: -15px;
   padding-right: 20px;
-}
-.group nav ul li:hover .dropdown ul{
-  display: block;
-  margin: 10px;
 }
 .group nav ul li:hover .dropdown ul li{
   display: block;
@@ -100,6 +103,12 @@ nav ul li a:hover{
   padding: 10px;
   text-align: left;
 }
+.group nav ul li:hover .dropdown ul{
+  display: block;
+  margin: 10px;
+}
+
+
 /*Center title and change its color*/
 #title {
 line-height: 30px;
@@ -144,33 +153,34 @@ footer{
   background-color: grey;
   margin: 0;
   padding-top: 0px;
-  padding-bottom: 5px;
+  position: static;
+  bottom: 0px;
   min-height: 30px;
+  width: 100%;
   border-top-color: brown;
   border-top-width: 100%;
   border-top-style: solid;
+  display: inline-flex;
+  justify-content: space-around;
 }
 footer h2{
-  position: absolute;
-  margin: 0;
+    margin: 0;
   padding-left: 100px;
-  padding-top: 5px;
+  padding-right: 100px;
   margin-left: 90px;
   font-style: italic;
 }
 footer img{
   width: 30px;
-  position: relative;
-  display: inline-block;
+  display: inline-flex;
   height: 30px;
   padding-bottom: 0px;
   padding-right: 120px;
-  top: 5px;
-  right: -500px;
+  padding-left: 20px
   border: none;
 }
 footer h2 img{
-  display: inline;
+  display: inline-flex;
   margin: 0;
   padding: 0px;
 }
@@ -424,71 +434,98 @@ footer h2 img{
         height: 25px;
         background-color: green;
       }
-/*.navigation{
-  float: left top;
-  align-content: left;
-  display: inline-block;
-  background-color: grey;
-  width: 100%;
-  height: 65%;
-  padding: 14px 18px;
-}
- /a{
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  border-right: 1px solid white;
-  text-decoration-style: bold;
-}
-a:hover {
-  color: white;
-  background-color: black;
-}
-
-ul{
-  list-style-type: none;
-  display: inline-block;
-  float: none;
-}
-.dropdown{
-	float: right;
-  overflow: hidden;
-}
-.dropddown #about {
-	font-size: 16px;
-  border: none;
-  outline: none;
-  color: blue;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; 
-  margin: 0;
-}
- .dropdown:hover #about{
- 	 background-color: blue;
- 	}
- 	.aboutcontents{
+      /*Beginning Of Contact page*/
+      
+      .contact{
+      display: inline-flex;
+      padding: 15px 300px 50px 300px;
+      margin: 15px 300px 50px 300px;
+      }
+      .contact #inputbox{
+        
+      }
+      .contact #messageinputbox{
+        height: 100px;
+      }
+      .contact p{
+        margin-bottom: 30px;
+        color: white;
+      }
+      .contact #sendbtn{
+       width: 80px;
+      }
+      .contact #sendbtn:hover{
+       width: 100px;
+       background-color: green;
+       cursor: pointer;
+      }
+      /*beginning OF Profile page*/ 
+.settings{
   display: none;
-  position: absolute;
-  background-color: grey;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-
- 	 }
- 	 .aboutcontents a{
- 	 	float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+}
+.group nav ul li:hover .settings{
   display: block;
+  position: absolute;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-right: 20px;
+}
+.group nav ul li:hover .settings ul{
+  display: block;
+  margin: 10px;
+}
+.group nav ul li:hover .settings ul li{
+  display: block;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.5
+  width: 150px;
+  padding: 10px;
   text-align: left;
- 	 }
- 	 .aboutcontents a:hover{
- 	 	background-color: #ddd;
-    text-decoration: line-through; 
- 	 }
- 	 .dropdown:hover .aboutcontents{
- 	 display: block;
- 	 }
+}
+main{
+  line-height: 60px;
+  text-align: center;
+  color: #F2AA4C;
+  padding: 50px 0px;
+  text-decoration: none
+}
+@media(max-width: 768px){
+  header{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  header .group{
+    display: inline-flex;
+    margin: 5px 10px 0px 10px;
+    padding: 0px;
+  }
+  header .group nav ul{
+    display: inline-flex;
+     float: right;
+  }
+  header .group nav ul li{
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .group nav ul li a{
+    display: inline-flex;
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  header .group .name h1{
+    font-size: 15px;
+    margin: 10px 10px 0px 5px;
+    padding: 0px;
+  }
+  header .group .name h1 #J{
+    font-size: 22px;
+  }
+
+
  
+
+
