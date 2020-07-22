@@ -507,6 +507,9 @@ main{
   padding-left: 170px;
   color: #F2AA4C;
 }
+.bio a{
+  color: gold;
+}
 /*Beginning of Experience*/
 .experience{
   display: block;
@@ -700,6 +703,13 @@ main{
       }
       .login p{
         float: inline-block;
-
       }
+      /*Beginning Of Bio page*/
+      .bio p {
+  float: left;
+  width: 150px;
+}
+.bio{
+  display: inline-block;
+}
 
