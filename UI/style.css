@@ -435,30 +435,35 @@ footer h2 img{
         background-color: green;
       }
       /*Beginning Of Contact page*/
-      
-      .contact{
-      display: inline-flex;
-      padding: 15px 300px 50px 300px;
-      margin: 15px 300px 50px 300px;
-      }
-      .contact #inputbox{
-        
-      }
-      .contact #messageinputbox{
-        height: 100px;
-      }
-      .contact p{
-        margin-bottom: 30px;
-        color: white;
-      }
-      .contact #sendbtn{
-       width: 80px;
-      }
-      .contact #sendbtn:hover{
+     .register #namesinputbox{
+    width: 200px;
+    height: 20px;
+    margin-left: 12px;
+  }
+      .register #emailinputbox{
+    width: 200px;
+    height: 20px;
+    margin-left: 20px;
+  }
+   .register #messageinputbox{
+    width: 200px;
+    height: 80px;
+    margin-left: 0px;
+  }
+  .register #commentslabel{
+    width: 72px;
+  }
+  #messagebtn{
+     margin: 20px 20px 50px 200px;
+    width: 90px;
+    background-color: orange;
+  }
+   #messagebtn:hover{
        width: 100px;
-       background-color: green;
-       cursor: pointer;
-      }
+    background-color: green;
+
+  }
+
       /*beginning OF Profile page*/ 
 .settings{
   display: none;
@@ -486,9 +491,38 @@ footer h2 img{
 main{
   line-height: 60px;
   text-align: center;
-  color: #F2AA4C;
   padding: 50px 0px;
-  text-decoration: none
+  text-decoration: none;
+}
+/*Beginning of Bio*/
+.bio p {
+  float: left;
+  width: 150px;
+  height: 200px
+  margin: 50px;
+  font-size: 20px;
+  position: static;
+  line-height: 30px;
+  padding-left: 170px;
+}
+.bio .pic{
+  display: flex;
+}
+.pic{
+  padding: 50px 50px 50px 200px; 
+  width: 18=50px;
+  height: 200px;
+}
+.experience{
+  display: block;
+}
+.experience h2{
+  color: white;
+}
+.sub{
+color: white;
+/*Beeginning Of subscribe page*/
+
 }
 @media(max-width: 768px){
   header{
@@ -524,8 +558,129 @@ main{
   header .group .name h1 #J{
     font-size: 22px;
   }
+  #title {
+  line-height: 15px;
+  padding-top: 100px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.intro ul li h2{
+  width: 300px;
+  color: white;
+  line-height: 30px;
+  font-size: 200%;
+}
+hr {
+  display: none;
+}
+.resume{
+  margin-top: 200px;
+  padding-left: 50px; 
+  margin-left: 120px;
+}
+footer{
+  position: fixed;
+  min-height: 20px;
+}
+footer h2{
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+  padding-left:  10px
+}
+/*Blogs page*/
+main{
+  display: block;
+}
+#blog {
+  padding: 10px 0px; 
+}
+.blogs h1{
+  line-height: 20px;
+  text-align: left;
+  color: orange;
+  font-size: 36px;
+  padding: 20px;
+}
+.blogs p{
+  color: white;
+}
+/*Blog 1*/
 
+.blogs{
+  display: flex;
+}
+.blogs h2{
+  color: white;
+  padding: 15px;
+}
+.blogs p{
+  padding-left: 100px;
+}
+/*Blog 1*/
 
- 
+.blogs{
+  display: block;
+}
+/*Article Section*/
+  .articles{
+    display: block;
+  }
+  .articles h1{
+    display: flex;
+  }
+  .subscribe{
+    padding-left: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  #subscribelbl{
+    color: white;
+    font-size: 20px;
+    align-content: center;
+  }
+  /*Questions Page*/
+  #blog h1{
+    margin-top: 100px;
+  }
+  .register p{
+    display: inline-block;
+  }
+  .register label{
+    color: white;
+    font-size: 20px;
+    margin: 0px 40px 20px 20px ;
+    display: block;
+    padding-right: 20px; 
+  }
+  .register{
+    margin: 0px 0px 0px 10px;
+      }
+    .register #commentslabel{
+    width: 200px;
+  }
+  /*Beginning Of Register page*/
+  #blog h1{
+    margin-top: 100px;
+  }
+  #regbtn{
+        margin-left: 120px;
+      }
+  /*Beginning Of login pag*/
+      .login{
+        display: block;
+        padding-left: 0px;
+        margin-left: 0px; 
+      }
+      .login p{
+        float: inline-block;
 
-
+      }
