@@ -45,6 +45,7 @@ header #usericon{
   padding: 0px;
 }
 header .name h1 #J{
+  color: #F2AA4C;
   font-size: 40px
 }
 /*All link tags in header*/
@@ -504,25 +505,35 @@ main{
   position: static;
   line-height: 30px;
   padding-left: 170px;
+  color: #F2AA4C;
 }
-.bio .pic{
-  display: flex;
-}
-.pic{
-  padding: 50px 50px 50px 200px; 
-  width: 18=50px;
-  height: 200px;
-}
+/*Beginning of Experience*/
 .experience{
   display: block;
 }
 .experience h2{
   color: white;
 }
+.experience p{
+  color: #F2AA4C; 
+}
 .sub{
 color: white;
+}
 /*Beeginning Of subscribe page*/
-
+#thankslbl{
+color: green;
+margin-left: 200px;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+#subscribebtn{
+  margin-left: 200px;
+}
+#subscribebtn:hover{
+  width:80px;
+  background-color: green;
+  cursor: pointer;
 }
 @media(max-width: 768px){
   header{
@@ -593,6 +604,13 @@ footer img{
   height: 20px;
   padding-right: 20px;
   padding-left:  10px
+}
+.intro ul li .profile{
+  margin-right: 10px;
+  border: 10px solid black;
+}
+.intro ul li h2{
+  font-size: 150%;
 }
 /*Blogs page*/
 main{
@@ -684,3 +702,4 @@ main{
         float: inline-block;
 
       }
+
