@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This is the Blogs page">
+<meta name="author" content="Junior-Adadie">
+<link rel="stylesheet" href="style.css">
+<title>Blog</title>
+</head>
+<body>
+	        <!--This is the header html-->
+<header>
+	<div class="group">
+		<div class="name">
+			<h1>K<span id="J">J</span>A</h1>
+		</div>
+	<nav>
+		<ul>
+		   <li> <a href="index.html"> Home </a></li>
+		   <li> <a href="blogs.html"> Blogs </a></li>
+		   <li><a href="#"> About Me </a>
+		   	     <div class="dropdown">  
+		   	     	<ul>
+		   		        <li><a href="bio.html">Bio</li></a>
+                        <li><a href="experience.html">Experience</li></a>
+		   			</ul>
+		   		 </div>
+		   </li>
+		   <li><a href="Contacts.html"> Contact Me</a></li>
+		   <li><a href="Login.html"> Login</a></li>
+		   <li><a href="Signup.html"> Sign Up</a></li>
+		   <li><a href="Login.html"> <img src="./Assets/user.png" id="usericon"></a></li>
+           <li><a href="#">Settings</a>
+                 <div class="settings">  
+                    <ul>
+                        <li><a href="profile.html#new">Create new blog</li></a>
+                        <li><a href="profile.html#reminder">Reminder Settings</li></a>
+                        <li><a href="profile.html#articles">My Blogs & Articles</li></a>
+                        <li><a href="#"> Update information</li></a>
+                    </ul>
+                </div>
+           </li>
+		</ul>
+    </nav>
+    </div>
+</header>
+             <!--body starts here--> 
+             <main> 
+        <section id="reminder">
+            <p><label for="date" id="newrem"><b>Set new reminder</b></label><input type = "text" id="reginputbox" placeholder="month/date/year" name="username"><input type = "text" id="reginputbox" placeholder="time" name="username"><a href="#">Set</a></p>
+            <p><label for="date" id="newrem"><b>Set Reminders</b>
+        <ol><li></label><input type = "text" id="reginputbox" placeholder="Reminder 1" name="username"></li>
+            <li></label><input type = "text" id="reginputbox" placeholder="Reminder 2" name="username"></li>
+            <li></label><input type = "text" id="reginputbox" placeholder="Reminder 3" name="username"></li>
+        </ol>
+        <h3> Number of Entries made:<span>15</span></h3>
+        </section>
+        <section id="new">
+            <h1>Create new article or blog</h1>
+        <div class="contact">
+            <form class="form">
+                 <p><label for="Names" id="contactnames"><b>Author_Names</b></label><input type = "text" id="reginputbox" placeholder="Enter names" name="names" required></p>
+                 <p><label for="Email" id="contactemaillbl"><b>Title & Date</b></label><input type = "text" id="reginputbox" placeholder="Enter description & date" name="email" required></p>
+                 <p><label for="text" id="message"><b>Content</b></label><input type = "text" id="messageinputbox" placeholder="Enter your content" name="text" required></p>
+                 <p><label for="text" id="citation"><b>Insert citation if any:</b></label><input type = "text" id="reginputbox">
+                <p><b> Upload Images</b><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()"></p>
+                 <p><button type="submit" id="sendbtn"> <b>Send</b> </button></p>
+            </form>
+        </div>    
+        </section>
+        <div id="blog">
+          <h1><b>BLOGS & ARTICLES</b></h1>
+        </div>
+	            <section class="blogs">
+	            	<h1> Popular</h1>
+	                
+	                	<div class="blog1">
+	                		<h2> How to use figma</h2>
+	                        <h5>Title Description  [date]</h5>
+
+		                   <div class="figma"><img src="./figma.png" class="figmaimg" alt="Figma">
+	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                           </div>
+                           <form>
+
+                                <input type="submit" name="delete" id="reviewbtn">
+                                <input type="submit" name="edit" id="hidebtn">
+                        		<input type="submit" name="delete" id="deletebtn">
+                        		<input type="submit" name="edit" id="editbtn">
+                        	</form>
+                        </div>
+                        
+                        <div class="blog2">
+                        	<h2> Get Started wit github</h2>
+	                        <h5>Title Description  [date]</h5>
+	                    
+		                   <div class="github"><img src="./Assets/github.jpg" class="githubimg">
+	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                           </div>
+                           <form>
+                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
+                        		<input type="submit" name="comment" id="commentbutton">
+                        	</form>
+                        </div>
+                        
+                        <div class="blog3">
+                        	<h2> Adobe Illustrators</h2>
+	                    	<h5>Title Description  [date]</h5>
+	                    
+		                	<div class="photoshop"><img src="./Assets/photoshop.png" class="photoshopimg">
+	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                        	</div>
+                        	<form>
+                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
+                        		<input type="submit" name="comment" id="commentbutton">
+                        	</form>
+                    	</div>
+                    	<div class="blog4">
+                        	<h2> Sketch Tools & Uses</h2>
+	                    	<h5>Title Description  [date]</h5>
+	                    
+		                	<div class="sketch"><img src="./Assets/sketch.png" class="sketchimg">
+	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                        	</div>
+                        	<form>
+                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
+                        		<input type="submit" name="comment" id="commentbutton">
+                        	</form>
+                    	</div>
+                </section>
+                <section class="articles"><div id="articles">
+                        <h1>Articles</h1>
+                    <article class="article1">
+                    	<h2>Author_Names [date]</h2>
+                    	<h5>Title Description  [date]</h5>
+                	       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                	       <form>
+                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
+                        		<input type="submit" name="comment" id="commentbutton">
+                        	</form>
+                    </article>
+                	<article class="article2">
+                		<h2>Author_Names [date]</h2>
+                		<h5>Title Description  [date]</h5>
+                	       <p>Nullam sed ex dictum dui sollicitudin ultrices. Etiam mollis, est vitae tempus sodales, nisl velit tempus turpis, et rhoncus leo velit sed dolor. Donec ut ipsum non justo congue fermentum. Integer dignissim auctor fringilla. Nam laoreet pharetra varius. Nulla facilisi. Nullam vehicula bibendum mi a rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In id hendrerit ante, sed pharetra arcu. Etiam sodales enim nisi. Nullam in posuere sapien. Duis fringilla, est ac commodo lobortis, ligula neque luctus ex, eu ultricies mauris neque in tortor. Aliquam non neque sed elit semper scelerisque. Etiam pulvinar turpis ut nisl interdum semper. In hendrerit lacus tellus, et mollis dui fringilla sed.</p>
+                	       <form>
+                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
+                        		<input type="submit" name="comment" id="commentbutton">
+                        	</form>
+                	</article>
+                </div>
+                </section>
+            </main>
+<hr>
+<p><form method="get" action="#" class="subscribe">
+	<label for="comment" id="subscribelbl">Never Miss Out!!!</label>
+	<button type= "submit"> SUBSCRIBE </button></form></p>
+<footer>
+	<h2>Connect On:</h2>
+	<img src="./Assets/instagram.png">
+	<img src="./Assets/facebook.png">
+	<img src="./Assets/twitter.png">
+	<img src="./Assets/linkedin.png">
+	<img src="./Assets/youtube.png">
+</footer>
+</body>

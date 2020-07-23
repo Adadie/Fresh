@@ -1,0 +1,711 @@
+body {
+  /*background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");*/
+  background-color: #101820;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+/*The whole header div*/
+.group{
+  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: 80%;
+}
+/*Header tag, it will change background, margin,height & padding*/
+header{
+  background-color: grey;
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  min-height: 40px;
+  border-bottom-color: brown;
+  border-bottom-width: 100%;
+  border-bottom-style: solid;
+  position: fixed;
+}
+/*This will change the h1 properties*/
+header .name h1{
+  float: left;
+  margin: 0;
+  padding: 5px;
+  font-size: 30px
+}
+header #usericon{
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+header .name h1 #J{
+  color: #F2AA4C;
+  font-size: 40px
+}
+/*All link tags in header*/
+header a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px;
+}
+/*all ul*/
+ul{
+  margin: 0;
+  padding: 0;
+}
+/* line all li in header*/
+header li{
+  display: inline-flex;
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+/*send navigation bar to right*/
+header nav{
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 0;
+  display: inline-flex;
+}
+.dropdown{
+  display: none;
+}
+ nav ul li:hover{
+  display: inline-block;
+  text-decoration: line-through;
+  color: white;
+}
+nav ul li a:hover{
+  color: orange;
+  font-size: 25px;
+}
+.group nav ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-right: 20px;
+}
+.group nav ul li:hover .dropdown ul li{
+  display: block;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.5
+  width: 150px;
+  padding: 10px;
+  text-align: left;
+}
+.group nav ul li:hover .dropdown ul{
+  display: block;
+  margin: 10px;
+}
+
+
+/*Center title and change its color*/
+#title {
+line-height: 30px;
+  text-align: center;
+  color: #F2AA4C;
+  padding-top: 200px;
+  font-size: 30px;
+}
+ /*pic with intro*/
+.intro{
+  display: inline-block;
+  margin-left: 40px;
+  float: right;
+  width: 100%;
+  opacity: 1;
+}
+.intro ul li .profile{
+  width: 20%;
+  float: right;
+  padding: 0px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  border: 20px solid black;
+}
+.intro ul li{
+  display: inline;
+}
+.intro ul li h2{
+  display: flex;
+  width: 600px;
+  color: white;
+  font-size: 250%;
+  float: right;
+}
+.resume{
+  padding-left: 300px; 
+  margin-left: 300px;
+}
+/*footer*/
+footer{
+  background-color: grey;
+  margin: 0;
+  padding-top: 0px;
+  position: static;
+  bottom: 0px;
+  min-height: 30px;
+  width: 100%;
+  border-top-color: brown;
+  border-top-width: 100%;
+  border-top-style: solid;
+  display: inline-flex;
+  justify-content: space-around;
+}
+footer h2{
+    margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 90px;
+  font-style: italic;
+}
+footer img{
+  width: 30px;
+  display: inline-flex;
+  height: 30px;
+  padding-bottom: 0px;
+  padding-right: 120px;
+  padding-left: 20px
+  border: none;
+}
+footer h2 img{
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+/*Beginning of blog page css*/
+#blog {
+  line-height: 60px;
+  text-align: center;
+  color: #F2AA4C;
+  padding: 50px 0px;
+  text-decoration: underline; 
+}
+.blogs h1{
+  line-height: 60px;
+  text-align: left;
+  color: orange;
+  font-size: 36px;
+  padding: 20px;
+}
+.blogs p{
+  color: white;
+}
+/*Blog 1*/
+
+.blogs{
+  display: flex;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+.blogs .figma{
+  padding: 20px;
+}
+.blogs .figma .figmaimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .figma p{
+  width: 200px; 
+}
+/*blog 2*/
+.blogs{
+  margin-left: auto;
+  padding: 0px;
+  overflow: hidden;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+  .blogs h5{
+  color: orange;
+  padding: 10px;
+}
+.blogs .github{
+  padding: 20px;
+}
+.blogs .github .githubimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .github p{
+  width: 200px;
+  }
+  /*blog 3*/
+   .blogs{
+  margin-left: auto;
+  padding: 0px;
+  overflow: hidden;
+}
+.blogs h2{
+  color: white;
+  padding: 40px;
+}
+.blogs .photoshop{
+  padding: 20px;
+}
+.blogs .photoshop .photoshopimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .photoshop p{
+  width: 200px;
+  }
+  .blogs .sketch{
+  padding: 20px;
+}
+.blogs .sketch .sketchimg{
+  height: 100px;
+  width: 100px;
+}
+.blogs .sketch p{
+  width: 200px;
+  }
+  .blogs .blog1{
+    text-align: center;
+    padding-left: 40px;
+  }
+.blogs .blog2{
+    text-align: center;
+    padding-left: 60px;
+  }
+  .blogs .blog3{
+    text-align: center;
+    padding-left: 60px;
+  }
+  .blogs .blog4{
+    text-align: center;
+    padding-left: 60px;
+  }
+  /*Article Section*/
+  .articles{
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+  }
+  .articles h1{
+    color: orange;
+    font-size: 36px;
+    padding-right: 20px;
+  }
+  .articles h2{
+    color: white;
+    font-size: 20px;
+  }
+  .articles h5{
+    color: orange;
+    font-size: 10px;
+  }
+  .articles p{
+    color: white;
+  }
+  .articles .article1{
+    padding: 20px;
+  }
+  .articles .article2{
+    padding: 20px;
+  }
+  .article .article1 p{
+    width: 300px;
+    height: 500px;
+  }
+  .article .article2 p{
+    width: 300px;
+    height: 500px;
+  }
+  .subscribe{
+    padding-left: 300px;
+    margin-left: 200px;
+  }
+  #subscribelbl{
+    color: white;
+    font-size: 20px;
+    align-content: center;
+  }
+  /*Beginning of login page*/
+  .login{
+    padding:0px;
+    margin-left: 400px;
+    margin-bottom: 200px;
+  }
+  #namelbl{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+  }
+   #pswdlbl{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+  }
+  #loginbtn{
+    width: 40%;
+    margin: 20px;
+    margin-left: 150px;
+    border-radius: 50%;
+  }
+  #loginbtn:hover{
+    background-color: green;
+    cursor: pointer;
+  }
+  #namebox{
+    width: 40%;
+    margin: 20px;
+    opacity: 0.7;
+  }
+  #pswdbox{
+    width: 40%;
+    margin: 25px;
+    opacity: 0.7;
+  }
+  .login a{
+    color: white;
+    margin: 20px;
+  }
+  .signup{
+    margin: 20px;
+  }
+  #signuplbl{
+    color: white;
+  }
+  #signupbtn:hover{
+    background-color: green;
+    cursor: pointer;
+  } 
+    /*Beginning Of Sign Up Page*/
+  .register label{
+    color: white;
+    font-size: 20px;
+    margin: 0px 40px 20px 20px ;
+    display: block;
+    padding-right: 20px; 
+  }
+  .register #reginputbox{
+    width: 200px;
+    height: 20px;
+  }
+  .register p{
+    display: flex;
+  }
+  .register{
+    margin: 0px 0px 0px 450px;
+      }
+  .register  #emaillbl{
+        margin-left: 65px;
+      }
+  .register  #regpswdlbl{
+        margin-left: 35px;
+      }
+  #regbtn{
+        border-radius: 15%;
+        margin-left: 180px;
+        width: 210px;
+        height: 30px;
+      }
+  #regbtn:hover{
+        background-color: green; 
+        height: 33px;
+        cursor: pointer;
+      }
+      .loginreg{
+        display: flex;
+      }
+      #logbtn{
+        height: 20px;
+        width: 60px;
+        margin: 0;
+      }
+      #logbtn:hover{
+        height: 25px;
+        background-color: green;
+      }
+      /*Beginning Of Contact page*/
+     .register #namesinputbox{
+    width: 200px;
+    height: 20px;
+    margin-left: 12px;
+  }
+      .register #emailinputbox{
+    width: 200px;
+    height: 20px;
+    margin-left: 20px;
+  }
+   .register #messageinputbox{
+    width: 200px;
+    height: 80px;
+    margin-left: 0px;
+  }
+  .register #commentslabel{
+    width: 72px;
+  }
+  #messagebtn{
+     margin: 20px 20px 50px 200px;
+    width: 90px;
+    background-color: orange;
+  }
+   #messagebtn:hover{
+       width: 100px;
+    background-color: green;
+
+  }
+
+      /*beginning OF Profile page*/ 
+.settings{
+  display: none;
+}
+.group nav ul li:hover .settings{
+  display: block;
+  position: absolute;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-right: 20px;
+}
+.group nav ul li:hover .settings ul{
+  display: block;
+  margin: 10px;
+}
+.group nav ul li:hover .settings ul li{
+  display: block;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.5
+  width: 150px;
+  padding: 10px;
+  text-align: left;
+}
+main{
+  line-height: 60px;
+  text-align: center;
+  padding: 50px 0px;
+  text-decoration: none;
+}
+/*Beginning of Bio*/
+.bio p {
+  float: left;
+  width: 150px;
+  height: 200px
+  margin: 50px;
+  font-size: 20px;
+  position: static;
+  line-height: 30px;
+  padding-left: 170px;
+  color: #F2AA4C;
+}
+.bio a{
+  color: gold;
+}
+/*Beginning of Experience*/
+.experience{
+  display: block;
+}
+.experience h2{
+  color: white;
+}
+.experience p{
+  color: #F2AA4C; 
+}
+.sub{
+color: white;
+}
+/*Beeginning Of subscribe page*/
+#thankslbl{
+color: green;
+margin-left: 200px;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+#subscribebtn{
+  margin-left: 200px;
+}
+#subscribebtn:hover{
+  width:80px;
+  background-color: green;
+  cursor: pointer;
+}
+@media(max-width: 768px){
+  header{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  header .group{
+    display: inline-flex;
+    margin: 5px 10px 0px 10px;
+    padding: 0px;
+  }
+  header .group nav ul{
+    display: inline-flex;
+     float: right;
+  }
+  header .group nav ul li{
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .group nav ul li a{
+    display: inline-flex;
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  header .group .name h1{
+    font-size: 15px;
+    margin: 10px 10px 0px 5px;
+    padding: 0px;
+  }
+  header .group .name h1 #J{
+    font-size: 22px;
+  }
+  #title {
+  line-height: 15px;
+  padding-top: 100px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.intro ul li h2{
+  width: 300px;
+  color: white;
+  line-height: 30px;
+  font-size: 200%;
+}
+hr {
+  display: none;
+}
+.resume{
+  margin-top: 200px;
+  padding-left: 50px; 
+  margin-left: 120px;
+}
+footer{
+  position: fixed;
+  min-height: 20px;
+}
+footer h2{
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+  padding-left:  10px
+}
+.intro ul li .profile{
+  margin-right: 10px;
+  border: 10px solid black;
+}
+.intro ul li h2{
+  font-size: 150%;
+}
+/*Blogs page*/
+main{
+  display: block;
+}
+#blog {
+  padding: 10px 0px; 
+}
+.blogs h1{
+  line-height: 20px;
+  text-align: left;
+  color: orange;
+  font-size: 36px;
+  padding: 20px;
+}
+.blogs p{
+  color: white;
+}
+/*Blog 1*/
+
+.blogs{
+  display: flex;
+}
+.blogs h2{
+  color: white;
+  padding: 15px;
+}
+.blogs p{
+  padding-left: 100px;
+}
+/*Blog 1*/
+
+.blogs{
+  display: block;
+}
+/*Article Section*/
+  .articles{
+    display: block;
+  }
+  .articles h1{
+    display: flex;
+  }
+  .subscribe{
+    padding-left: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  #subscribelbl{
+    color: white;
+    font-size: 20px;
+    align-content: center;
+  }
+  /*Questions Page*/
+  #blog h1{
+    margin-top: 100px;
+  }
+  .register p{
+    display: inline-block;
+  }
+  .register label{
+    color: white;
+    font-size: 20px;
+    margin: 0px 40px 20px 20px ;
+    display: block;
+    padding-right: 20px; 
+  }
+  .register{
+    margin: 0px 0px 0px 10px;
+      }
+    .register #commentslabel{
+    width: 200px;
+  }
+  /*Beginning Of Register page*/
+  #blog h1{
+    margin-top: 100px;
+  }
+  #regbtn{
+        margin-left: 120px;
+      }
+  /*Beginning Of login pag*/
+      .login{
+        display: block;
+        padding-left: 0px;
+        margin-left: 0px; 
+      }
+      .login p{
+        float: inline-block;
+      }
+      /*Beginning Of Bio page*/
+      .bio p {
+  float: left;
+  width: 150px;
+}
+.bio{
+  display: inline-block;
+}
+
