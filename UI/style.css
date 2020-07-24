@@ -111,7 +111,7 @@ nav ul li a:hover{
 line-height: 30px;
   text-align: center;
   color: #F2AA4C;
-  padding-top: 200px;
+  padding-top: 50px;
   font-size: 30px;
 }
  /*pic with intro*/
@@ -123,13 +123,14 @@ line-height: 30px;
   opacity: 1;
 }
 .intro ul li .profile{
-  width: 20%;
+  width: 15%;
+  height: 250px;
   float: right;
   padding: 0px;
   margin-right: 40px;
   border-radius: 20px;
   background-size: 100% 100%;
-  border: 20px solid black;
+  border: 15px solid black;
 }
 .intro ul li{
   display: inline;
@@ -534,7 +535,7 @@ margin-bottom: 60px;
   background-color: green;
   cursor: pointer;
 }
-@media(max-width: 768px){
+@media(max-width: 900px){
   header{
     width: 100%;
     margin: 0px;
