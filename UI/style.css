@@ -1,6 +1,6 @@
 body {
   /*background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");*/
-  background-color: #101820;
+  background-color: #101820FF;
   margin: 0 0 0 0;
   padding: 0;
 }
@@ -111,26 +111,27 @@ nav ul li a:hover{
 line-height: 30px;
   text-align: center;
   color: #F2AA4C;
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 30px;
 }
  /*pic with intro*/
 .intro{
   display: inline-block;
   margin-left: 40px;
+  line-height: 60px;
   float: right;
   width: 100%;
-  opacity: 1;
 }
 .intro ul li .profile{
   width: 15%;
-  height: 250px;
+  height: 270px;
   float: right;
   padding: 0px;
   margin-right: 40px;
   border-radius: 20px;
   background-size: 100% 100%;
   border: 15px solid black;
+  border: 10px solid black;
 }
 .intro ul li{
   display: inline;
@@ -339,7 +340,7 @@ footer h2 img{
   .login{
     padding:0px;
     margin-left: 400px;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
   }
   #namelbl{
     color: white;
@@ -433,6 +434,23 @@ footer h2 img{
         background-color: green;
       }
       /*Beginning Of Contact page*/
+      #contact h1 {
+    line-height: 60px;
+    text-align: center;
+    color: #F2AA4C;
+    padding: 60px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-decoration: underline; 
+}
+      #contact h3{
+    line-height: 20px;
+    text-align: center;
+    color: orange;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+      }
      .register #namesinputbox{
     width: 200px;
     height: 20px;
@@ -445,14 +463,14 @@ footer h2 img{
   }
    .register #messageinputbox{
     width: 200px;
-    height: 80px;
+    height: 60px;
     margin-left: 0px;
   }
   .register #commentslabel{
     width: 72px;
   }
   #messagebtn{
-     margin: 20px 20px 50px 200px;
+     margin: 10px 20px 10px 200px;
     width: 90px;
     background-color: orange;
   }
@@ -460,6 +478,14 @@ footer h2 img{
        width: 100px;
     background-color: green;
 
+  }
+  #thanks{
+    color: orange;
+    padding-left: 100px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: bold;
   }
 
       /*beginning OF Profile page*/ 
@@ -498,6 +524,8 @@ main{
   width: 150px;
   height: 200px
   margin: 50px;
+  margin-bottom: 10px;
+  margin-top: 0px;
   font-size: 20px;
   position: static;
   line-height: 30px;
@@ -525,7 +553,7 @@ color: white;
 color: green;
 margin-left: 200px;
 margin-top: 50px;
-margin-bottom: 60px;
+margin-bottom: 70px;
 }
 #subscribebtn{
   margin-left: 200px;
@@ -574,6 +602,16 @@ margin-bottom: 60px;
   padding-top: 100px;
   font-size: 15px;
   padding-bottom: 20px;
+}
+.intro ul li .profile{
+  width: 25%;
+  height: 200px;
+  float: right;
+  padding: 0px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  border: 10px solid black;
 }
 .intro ul li h2{
   width: 300px;
