@@ -176,7 +176,6 @@ footer img{
   padding-bottom: 0px;
   padding-right: 120px;
   padding-left: 20px
-  border: none;
 }
 footer h2 img{
   display: inline-flex;
@@ -401,6 +400,10 @@ footer h2 img{
   .register p{
     display: flex;
   }
+  .register .form h3{
+    color: red;
+    font-size: medium;
+  }
   .register{
     margin: 0px 0px 0px 450px;
       }
@@ -432,6 +435,10 @@ footer h2 img{
       #logbtn:hover{
         height: 25px;
         background-color: green;
+      }
+      #usernameerror{
+        display: none;
+        color: red;
       }
       /*Beginning Of Contact page*/
       #contact h1 {
@@ -747,4 +754,3 @@ main{
 .bio{
   display: inline-block;
 }
-
