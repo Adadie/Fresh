@@ -41,11 +41,11 @@
           <h3> Thanks for taking time to connect!!!</h3>
         </div>
         <div class="register">
-            <form class="form">
-            	 <p><label for="Names" id="nameslabel"><b>Names</b></label><input type = "text" id="namesinputbox" placeholder="Enter your names" name="username" required></p>
-                 <p><label for="Email" id="emaillabel"><b>Email</b></label><input type = "text" id="emailinputbox" placeholder="Enter your email" name="username" required></p>
-            	 <p><label for="Names" id="messagelabel"><b>Message</b></label><input type = "text" id="messageinputbox" placeholder="Enter your message" name="username" required></p>
-                 <p><label for="psw" id="commentslabel"><b>How was your site experience?</b></label><input type = "password" id="commentsinputbox" placeholder="Enter any comments"></p>
+            <form class="form" id="contactform">
+            	 <p><label for="Names" id="nameslabel"><b>Names</b></label><input type = "text" id="namesinputbox" placeholder="Enter your names" name="names" required></p>
+                 <p><label for="Email" id="emaillabel"><b>Email</b></label><input type = "text" id="emailinputbox" placeholder="Enter your email" name="email" required></p>
+            	 <p><label for="Names" id="messagelabel"><b>Message</b></label><input type = "text" id="messageinputbox" placeholder="Enter your message" name="message" required></p>
+                 <p><label for="psw" id="commentslabel"><b>How was your site experience?</b></label><input type = "text" id="commentsinputbox" placeholder="Enter any comments" name="comments"></p>
                  <button type= "submit" id="messagebtn"> <b>Send</b> </button>
             </form>
                 <p id="thanks">We will get back to you soon!!!</p>
@@ -59,4 +59,28 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
+	  authDomain: "fresh-blogs.firebaseapp.com",
+	  databaseURL: "https://fresh-blogs.firebaseio.com",
+	  projectId: "fresh-blogs",
+	  storageBucket: "fresh-blogs.appspot.com",
+	  messagingSenderId: "1018716457862",
+	  appId: "1:1018716457862:web:42a409cc9cf2f352177a07",
+	  measurementId: "G-D38PK9ZNW4"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+	const db = firebase.firestore();
+  </script>
+<script src="./signupfirestore.js"></script>
 </body>
