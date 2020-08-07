@@ -397,6 +397,7 @@ footer h2 img{
     width: 200px;
     height: 20px;
   }
+  
   .register p{
     display: flex;
   }
@@ -447,17 +448,9 @@ footer h2 img{
     color: #F2AA4C;
     padding: 60px 0px 0px 0px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-decoration: underline; 
 }
-      #contact h3{
-    line-height: 20px;
-    text-align: center;
-    color: orange;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-      }
      .register #namesinputbox{
     width: 200px;
     height: 20px;
@@ -489,8 +482,8 @@ footer h2 img{
   #thanks{
     color: orange;
     padding-left: 100px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-top: 20px;
     margin-top: 0px;
     font-weight: bold;
   }
@@ -570,6 +563,246 @@ margin-bottom: 70px;
   background-color: green;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
+=======
+/*Beginning of dashboard*/
+/*This is the sub nav bar*/
+.user{
+  display: inline-block;
+}
+#username{
+  float: left;
+  padding: 10px 40px 20px 40px;
+  color: white;
+}
+.dashboardsettings h3{
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+.dashboardsettings h3 span{
+  color: orange;
+  text-decoration: underline;
+}
+#userprofile{
+  padding: 20px 0px 20px 10px;
+  width: 60px;
+  height: 80px;
+}
+.subnav{
+    padding-top: 20px;
+    width: 100%;
+    position: sticky;
+    top: 30px;
+}
+.subnav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.subnav ul li a{
+  color: white;
+  text-decoration: none;
+}
+/*Info update*/
+.dashboardsettings hr{
+padding: 30px 10px 30px 10px;
+background-color: black;
+opacity: 0.5;
+}
+  #profileinfo{
+  display: flex;
+  margin: 20px 40px 10px 30px;
+  padding: 0px 30px 10px 0px;
+  }
+  #profileinfo h1{
+  color: orange;
+  font-size: 40px;
+  }
+  #newfnamelbl{
+    padding-right: 80px;
+  }
+  #newlnamelbl{
+    padding-right: 80px;
+  }
+  .dashboard  #newemaillbl{
+        margin-left: 0px;
+        margin-right: 120px;
+  }
+  #oldpswdlbl{
+    padding-right: 30px;
+  }
+  #newpswdlbl{
+    padding-right: 25px; 
+    margin-left: 35px;
+  }
+  .dashboard #reinputbox{
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+  }
+  .dashboard{
+    margin: 0px 0px 0px 100px;
+    padding-top: 30px;
+    color: white;
+      }
+  
+  #updatebtn{
+        border-radius: 15%;
+        margin-left: 180px;
+        width: 210px;
+        height: 30px;
+      }
+  #updatebtn:hover{
+        background-color: green; 
+        height: 33px;
+        cursor: pointer;
+      }
+      .dashboard hr{
+       margin:50px 0px 70px 0px;
+      }
+      /*View Posted Blogs*/
+      #postedblogs{
+        color: white;
+      }
+      #postedblogs h1{
+        color: orange;
+        font-size: 40px;
+        text-decoration: underline;
+      }
+      #postedblogs img{
+        width: 200px;
+        height: 200px;
+        padding: 20px 20px 20px 20px;
+      }
+      #postedblogs p{
+        width: 400px;
+        height: 200px;
+      }
+      #postedblogs .card{
+        display: flex;
+        overflow: hidden;
+      }
+      .blog{
+        display: inline-block;
+      }
+      .blogbtns{
+        margin-left: 200px;
+        margin-bottom: 50px;
+      }
+      .blogbtns a{
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        margin-right: 50px;
+        padding: 10px;
+        font-weight: bold;
+      }
+      /*Beginning of articles section*/
+      #postedarticles{
+        color: white; 
+      }
+      #postedarticles h1{
+        font-size: 46px;
+        color: orange;
+        text-decoration: underline;
+      }
+      #postedarticles p{
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        display: inline-block;
+      }
+      /*Beginning of new post form*/
+      #newpost{
+        color: white;
+      }
+      #newpost h1{
+        color: orange;
+        font-size: 46px;
+        text-decoration: underline;
+      }
+      .postform #authornames{
+        padding-right: 80px;
+      }
+      .postform #titlellbl{
+        padding-right: 155px;
+      }
+      .postform #contentlbl{
+        padding-right: 130px;
+      }
+      .postform #citation{
+        padding-right: 40px;
+      }
+      .postform #upload{
+        padding-right: 40px;
+      }
+      .postform #contentinputbox{
+       height: 100px;
+      }
+      #postblog{
+        background-color: orange;
+      }
+      #postarticle{
+        background-color: orange;
+      }
+      #postblog:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      #postarticle:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      /*Beginning of edit post form*/
+      #editpost{
+        color: white;
+      }
+      #editpost h1{
+        color: orange;
+        font-size: 46px;
+        text-decoration: underline;
+      }
+      
+      /*Beaginning of reminder settings*/
+      #reminder{
+        color: white;
+      }
+      #reminder h1{
+        color: orange;
+        text-decoration: underline;
+      }
+      #newrem{
+        padding-right: 20px;
+      }
+      #reminder ol{
+        list-style: none;
+      }
+      #reminder a{
+        text-decoration: none;
+        color: white;
+        background-color: grey;
+        margin-left: 20px;
+        font-weight: bold; 
+      }
+      #setrembtn{
+        background-color: orange;
+      }
+      #setrembtn:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      /*Beginning of message-list*/
+      .posted .article  {
+       flex: right;
+      }
+      /*Beginnning Of Media Queries*/
+>>>>>>> Stashed changes
 @media(max-width: 900px){
   header{
     width: 100%;
