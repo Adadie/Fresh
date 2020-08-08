@@ -31,6 +31,7 @@ auth.signInUserWithEmailAndPassword(email, password).then(cred => {
       //reset form
       loginForm.reset();
     });
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
@@ -64,4 +65,6 @@ loginForm.addEventListener('submit', (e) => {
 });
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+>>>>>>> 188fc95e48f0493b2e13ae714d73091147e35222
 });
