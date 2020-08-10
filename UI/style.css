@@ -799,10 +799,19 @@ opacity: 0.5;
       .post-list p  {
        align-items: center;
       }
+      .post-list .btn{
+        background-color: orange;
+        margin-right: 50px;
+      }
+      .post-list .updatebtn{
+        background-color: green;
+
+      }
       /*Beginning of message-list*/
       .messagelist p  {
         align-items: center;
        }
+
 
       /*Beginnning Of Media Queries*/
 @media(max-width: 900px){

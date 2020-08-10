@@ -44,7 +44,9 @@ function renderpost(doc){
     Info.textContent = doc.data().Info;
     Citation.textContent = doc.data().Citation;
     Delete.textContent = 'Delete';
+    Delete.setAttribute("class", "btn");
     update.textContent = 'Update';
+    update.setAttribute("class", "updatebtn");
 
     li.appendChild(Author_Names);
     li.appendChild(Description);
@@ -61,12 +63,12 @@ function renderpost(doc){
         db.collection('Posts').doc(id).delete();
     });
     
-    /* // Updating data
+    //Updating data
  update.addEventListener('click', (e) => {
-    e.stopPropagation();
     let id = e.target.parentElement.getAttribute('data-id');
     db.collection('Posts').doc(id).update();
-});*/
+    window.location.href = "profile.html#editpost"
+});
 }
 
 
