@@ -38,8 +38,10 @@
              <!--body starts here-->
              <main>
         <div id="blog">
-          <h1><b>BLOGS & ARTICLES</b></h1>
-        </div>
+		  <h1><b>BLOGS & ARTICLES</b></h1>
+		  <ul class="blogs-list"></ul>
+		</div>
+		<a href="#" id="moreblogs">See blogs</a>
 	            <section class="blogs">
 	            	<h1> Popular</h1>
 	                
@@ -117,7 +119,6 @@
                 	</article>
                 </section>
                 </main> 
-            
 <hr>
 <p><form method="get" action="subscribe.html" class="subscribe">
 	<label for="comment" id="subscribelbl">Never Miss Out!!!</label>
@@ -130,4 +131,30 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
+      authDomain: "fresh-blogs.firebaseapp.com",
+      databaseURL: "https://fresh-blogs.firebaseio.com",
+      projectId: "fresh-blogs",
+      storageBucket: "fresh-blogs.appspot.com",
+      messagingSenderId: "1018716457862",
+      appId: "1:1018716457862:web:42a409cc9cf2f352177a07",
+      measurementId: "G-D38PK9ZNW4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  </script>
+<script src="./blogfirestore.js"></script>
 </body>
