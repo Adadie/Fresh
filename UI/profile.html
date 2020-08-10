@@ -29,133 +29,185 @@
 		   </li>
 		   <li><a href="Contacts.html"> Contact Me</a></li>
 		   <li><a href="Login.html"> Login</a></li>
-		   <li><a href="signup.html"> Sign Up</a></li>
-		   <li><a href="Login.html"> <img src="./Assets/user.png" id="usericon"></a></li>
-           <li><a href="#">Settings</a>
-                 <div class="settings">  
-                    <ul>
-                        <li><a href="profile.html#new">Create new blog</li></a>
-                        <li><a href="profile.html#reminder">Reminder Settings</li></a>
-                        <li><a href="profile.html#articles">My Blogs & Articles</li></a>
-                        <li><a href="#"> Update information</li></a>
-                    </ul>
-                </div>
+		   <li><a href="Signup.html"> Sign Up</a></li>
+		   <li><a href="profile.html"> <img src="./Assets/user.png" id="usericon"></a></li>
+           <li><a href="#" id="logout"> LogOut</a></li>      
            </li>
 		</ul>
     </nav>
     </div>
 </header>
              <!--body starts here--> 
-             <main> 
-        <section id="reminder">
-            <p><label for="date" id="newrem"><b>Set new reminder</b></label><input type = "text" id="reginputbox" placeholder="month/date/year" name="username"><input type = "text" id="reginputbox" placeholder="time" name="username"><a href="#">Set</a></p>
-            <p><label for="date" id="newrem"><b>Set Reminders</b>
-        <ol><li></label><input type = "text" id="reginputbox" placeholder="Reminder 1" name="username"></li>
-            <li></label><input type = "text" id="reginputbox" placeholder="Reminder 2" name="username"></li>
-            <li></label><input type = "text" id="reginputbox" placeholder="Reminder 3" name="username"></li>
-        </ol>
-        <h3> Number of Entries made:<span>15</span></h3>
-        </section>
-        <section id="new">
-            <h1>Create new article or blog</h1>
-        <div class="contact">
-            <form class="form">
-                 <p><label for="Names" id="contactnames"><b>Author_Names</b></label><input type = "text" id="reginputbox" placeholder="Enter names" name="names" required></p>
-                 <p><label for="Email" id="contactemaillbl"><b>Title & Date</b></label><input type = "text" id="reginputbox" placeholder="Enter description & date" name="email" required></p>
-                 <p><label for="text" id="message"><b>Content</b></label><input type = "text" id="messageinputbox" placeholder="Enter your content" name="text" required></p>
-                 <p><label for="text" id="citation"><b>Insert citation if any:</b></label><input type = "text" id="reginputbox">
-                <p><b> Upload Images</b><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()"></p>
-                 <p><button type="submit" id="sendbtn"> <b>Send</b> </button></p>
-            </form>
-        </div>    
-        </section>
-        <div id="blog">
-          <h1><b>BLOGS & ARTICLES</b></h1>
-        </div>
-	            <section class="blogs">
-	            	<h1> Popular</h1>
-	                
-	                	<div class="blog1">
-	                		<h2> How to use figma</h2>
-	                        <h5>Title Description  [date]</h5>
-
-		                   <div class="figma"><img src="./figma.png" class="figmaimg" alt="Figma">
-	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
-                           </div>
-                           <form>
-
-                                <input type="submit" name="delete" id="reviewbtn">
-                                <input type="submit" name="edit" id="hidebtn">
-                        		<input type="submit" name="delete" id="deletebtn">
-                        		<input type="submit" name="edit" id="editbtn">
-                        	</form>
-                        </div>
-                        
-                        <div class="blog2">
-                        	<h2> Get Started wit github</h2>
-	                        <h5>Title Description  [date]</h5>
-	                    
-		                   <div class="github"><img src="./Assets/github.jpg" class="githubimg">
-	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
-                           </div>
-                           <form>
-                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
-                        		<input type="submit" name="comment" id="commentbutton">
-                        	</form>
-                        </div>
-                        
-                        <div class="blog3">
-                        	<h2> Adobe Illustrators</h2>
-	                    	<h5>Title Description  [date]</h5>
-	                    
-		                	<div class="photoshop"><img src="./Assets/photoshop.png" class="photoshopimg">
-	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
-                        	</div>
-                        	<form>
-                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
-                        		<input type="submit" name="comment" id="commentbutton">
-                        	</form>
-                    	</div>
-                    	<div class="blog4">
-                        	<h2> Sketch Tools & Uses</h2>
-	                    	<h5>Title Description  [date]</h5>
-	                    
-		                	<div class="sketch"><img src="./Assets/sketch.png" class="sketchimg">
-	                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
-                        	</div>
-                        	<form>
-                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
-                        		<input type="submit" name="comment" id="commentbutton">
-                        	</form>
-                    	</div>
-                </section>
-                <section class="articles"><div id="articles">
-                        <h1>Articles</h1>
-                    <article class="article1">
-                    	<h2>Author_Names [date]</h2>
-                    	<h5>Title Description  [date]</h5>
-                	       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
-                	       <form>
-                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
-                        		<input type="submit" name="comment" id="commentbutton">
-                        	</form>
-                    </article>
-                	<article class="article2">
-                		<h2>Author_Names [date]</h2>
-                		<h5>Title Description  [date]</h5>
-                	       <p>Nullam sed ex dictum dui sollicitudin ultrices. Etiam mollis, est vitae tempus sodales, nisl velit tempus turpis, et rhoncus leo velit sed dolor. Donec ut ipsum non justo congue fermentum. Integer dignissim auctor fringilla. Nam laoreet pharetra varius. Nulla facilisi. Nullam vehicula bibendum mi a rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In id hendrerit ante, sed pharetra arcu. Etiam sodales enim nisi. Nullam in posuere sapien. Duis fringilla, est ac commodo lobortis, ligula neque luctus ex, eu ultricies mauris neque in tortor. Aliquam non neque sed elit semper scelerisque. Etiam pulvinar turpis ut nisl interdum semper. In hendrerit lacus tellus, et mollis dui fringilla sed.</p>
-                	       <form>
-                        		<input type="comment" name="comment" placeholder="Enter comment" id="comment">
-                        		<input type="submit" name="comment" id="commentbutton">
-                        	</form>
-                	</article>
+             <main class="dashboardsettings"> 
+                <div class="user">
+                <h2 id="username"> User_name</h2><img src="./Assets/user.png" id="userprofile">
+                <h3> Number of Entries made:<span>15</span></h3>
                 </div>
+                <nav class="subnav">
+                    <ul>
+                        <li><a href="profile.html#profileinfo">Update info</li></a>
+                        <li><a href="profile.html#newpost">Create new post</li></a>
+                        <li><a href="profile.html#postedblogs">View blogs</li></a>
+                        <li><a href="profile.html#postedarticles">View article</li></a>
+                        <li><a href="profile.html#reminder">Reminder Settings</li></a>
+                    </ul>
+                 </nav>
+        <section id="profileinfo">
+                    <h1>Update Info</h1>
+          <div class="dashboard">
+            <form class="form">
+                 <p><label for="Names" id="newfnamelbl"><b>First Name</b></label><input type = "text" id="reinputbox" placeholder="Enter lastname" name="username" required></p>
+                 <p><label for="Names" id="newlnamelbl"><b>Last Name</b></label><input type = "text" id="reinputbox" placeholder="Enter first name" name="username" required></p>
+                 <p><label for="Email" id="newemaillbl"><b>Email</b></label><input type = "text" id="reinputbox" placeholder="Enter your email" name="emal" required></p>
+                 <p><label for="psw" id="oldpswdlbl"><b>Current Password</b></label><input type = "password" id="reinputbox" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></p>
+                 <p><label for="psw" id="newpswdlbl"><b>New Password</b></label><input type = "password" id="reinputbox" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></p>
+                 <button type= "submit" id="updatebtn"> <b>Update</b> </button>
+            </form>
+          </div>
+      </section>
+      <hr>
+      <section id="postedblogs">
+        <div id="postedblog">
+          <h1><b>Posted Blogs</b></h1>
+        </div>
+                        <div class="blog">
+                            <h2> How to use figma</h2>
+                            <h5>Title Description  [date]</h5>
+
+                           <div class="card"><img src="./Assets/figma.png" class="figmaimg" alt="Figma">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                           </div>
+                           <div class="blogbtns">
+                                 <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+                        </div>
+                        
+                        <div class="blog">
+                            <h2> Get Started wit github</h2>
+                            <h5>Title Description  [date]</h5>
+                        
+                           <div class="card"><img src="./Assets/github.jpg" class="githubimg">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                           </div>
+                           <div class="blogbtns">
+                                <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+                        </div>
+                        
+                        <div class="blog">
+                            <h2> Adobe Illustrators</h2>
+                            <h5>Title Description  [date]</h5>
+                        
+                            <div class="card"><img src="./Assets/photoshop.png" class="photoshopimg">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                            </div>
+                             <div class="blogbtns">
+                                <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+                        </div>
+                        <div class="blog">
+                            <h2> Sketch Tools & Uses</h2>
+                            <h5>Title Description  [date]</h5>
+                        
+                            <div class="card"><img src="./Assets/sketch.png" class="sketchimg">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                            </div>
+                            <div class="blogbtns">
+                                <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+                        </div>
                 </section>
-            </main>
-<hr>
-<p><form method="get" action="#" class="subscribe">
-	<label for="comment" id="subscribelbl">Never Miss Out!!!</label>
-	<button type= "submit"> SUBSCRIBE </button></form></p>
+                <hr>
+                <section id="postedarticles">
+                    <div id="articles">
+                        <h1>Posted Articles</h1>
+                    </div>
+                    <div class="posted"></div>
+                    <article class="article">
+                        <h2>Author_Names [date]</h2>
+                        <h5>Title Description  [date]</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget volutpat enim. Ut at venenatis quam. Ut at lacus consectetur, condimentum metus quis, elementum massa. Ut ut nisi arcu. Quisque et dui in mauris aliquam efficitur vitae ac odio. Donec ultrices fringilla felis, id consectetur est aliquam eu. Praesent dictum ut leo a suscipit. Sed auctor nec eros id auctor. Aenean nulla lorem, hendrerit eget faucibus vitae, aliquam at urna.</p>
+                          <div class="blogbtns">
+                                <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+
+            <ul class="post-list"></ul>
+
+        </div>
+
+                    </article>
+                    <article class="article">
+                        <h2>Author_Names [date]</h2>
+                        <h5>Title Description  [date]</h5>
+                           <p>Nullam sed ex dictum dui sollicitudin ultrices. Etiam mollis, est vitae tempus sodales, nisl velit tempus turpis, et rhoncus leo velit sed dolor. Donec ut ipsum non justo congue fermentum. Integer dignissim auctor fringilla. Nam laoreet pharetra varius. Nulla facilisi. Nullam vehicula bibendum mi a rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In id hendrerit ante, sed pharetra arcu. Etiam sodales enim nisi. Nullam in posuere sapien. Duis fringilla, est ac commodo lobortis, ligula neque luctus ex, eu ultricies mauris neque in tortor. Aliquam non neque sed elit semper scelerisque. Etiam pulvinar turpis ut nisl interdum semper. In hendrerit lacus tellus, et mollis dui fringilla sed.</p>
+                           <div class="blogbtns">
+                                <a href="#" class="deleteblogbtn">Delete</a>
+                                <a href="profile.html#editpost" class="editblogbtn">Edit</a>
+                                <a href="#" class="hideblogbtn">Hide</a>
+                           </div>
+                    </article>
+                </section>
+                <hr>
+                <section id="newpost">
+                       <h1>Create new article & blog</h1>
+                    <div class="post">
+                        <form class="postform" id="postform">
+                            <p><label for="Names" id="authornameslbl"><b>Author_Names</b></label><input type = "text" id="authornameinputbox" placeholder="Enter names" name="authornames" required></p>
+                            <p><label for="text" id="titlellbl"><b>Title</b></label><input type = "text" id="titlebox" placeholder="Enter description" name="description" required></p>
+                            <p><label for="text" id="contentlbl"><b>Content</b></label><input type = "text" id="contentinputbox" placeholder="Enter your content" name="info" required></p>
+                            <p><label for="text" id="citationlbl"><b>Insert citation if any:</b></label><input type = "text" id="citationinputbox" name="citation">
+                            <!--<p><label for="text" id="upload"><b> Upload cover images</b></label><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()" id="uploadbox" name="cover"></p>-->
+                            <p><button id="postblog"> Post Blog</button></p>
+                        </form>
+                    </div>    
+                </section>
+                <hr>
+                <section id="editpost">
+                       <h1>Edit mode</h1>
+                    <div class="editpost">
+                        <form class="editform">
+                            <p><label for="Names" id="authornames">Author_Names</label><input type = "text" id="authorinputbox" placeholder="Enter names" name="names" required></p>
+                            <p><label for="Email" id="titlellbl">Title</label><input type = "text" id="titleinputbox" placeholder="Enter description" name="email" required></p>
+                            <p><label for="text" id="contentlbl">Content</label><input type = "text" id="contentinputbox" placeholder="Enter your content" name="text" required></p>
+                            <p><label for="text" id="citation">Insert citation if any:</label><input type = "text" id="citationinputbox">
+                            <p><label for="text" id="upload">Upload cover images</label><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()" id="uploadbox"></p>
+                            <p><button type="submit" id="postarticle">Update Article</button>
+                               <button type="submit" id="postblog">Update Blog</button></p>
+                        </form>
+                    </div>    
+                </section>
+                <hr>
+                <div class="Messages">
+                    <h2>Received Messages</h2>
+                    <ul id="messagelist"></ul>
+        
+                </div>
+               <!---- <section id="messages">
+                    <h3>Received Messages</h3>
+                    <div class="messagelist">
+                    </div>
+                </section>-->
+                <hr>
+        <section id="reminder">
+            <h1> Reminder Settings</h1>
+            <p><label for="date" id="newrem">Set new reminder</label><input type = "date" id="reginputbox" placeholder="month/date/year" name="username"><input type = "time" id="reginputbox" placeholder="time" name="username"><form><button type="submit" id="setrembtn">SET</button></form></p>
+            <p><label for="date" id="newrem">Set Reminders
+        <ol><li></label><input type = "date" id="reginputbox" placeholder="Reminder 1" name="username"><input type = "time" id="reginputbox" placeholder="time" name="username"> <a href="#">Delete</a></li>
+            <li></label><input type = "date" id="reginputbox" placeholder="Reminder 2" name="username"><input type = "time" id="reginputbox" placeholder="time" name="username"><a href="#">Delete</a></li>
+            <li></label><input type = "date" id="reginputbox" placeholder="Reminder 3" name="username"><input type = "time" id="reginputbox" placeholder="time" name="username"><a href="#">Delete</a></li>
+        </ol>
+        </section>
+            </main>>
 <footer>
 	<h2>Connect On:</h2>
 	<img src="./Assets/instagram.png">
@@ -164,4 +216,31 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
+      authDomain: "fresh-blogs.firebaseapp.com",
+      databaseURL: "https://fresh-blogs.firebaseio.com",
+      projectId: "fresh-blogs",
+      storageBucket: "fresh-blogs.appspot.com",
+      messagingSenderId: "1018716457862",
+      appId: "1:1018716457862:web:42a409cc9cf2f352177a07",
+      measurementId: "G-D38PK9ZNW4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  </script>
+<script src="./Firestore.js"></script>
+<script src="./messagesfirestore.js"></script>
 </body>

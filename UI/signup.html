@@ -7,6 +7,9 @@
 <meta name="author" content="Junior-Adadie">
 <link rel="stylesheet" href="style.css">
 <title>Sign In</title>
+<style>.register .form h3{
+	color:red;
+	font-size: medium;}</style>
 </head>
 <body>
 	        <!--This is the header html-->
@@ -33,18 +36,26 @@
 		   <li><a href="Login.html"> <img src="./Assets/user.png" id="usericon"></a></li>
 		</ul>
     </nav>
-    </div>
+	</div>
 </header>
              <!--body starts here--> 
         <div id="blog">
           <h1><b>REGISTER</b></h1>
         </div>
         <div class="register">
-            <form class="form">
-            	 <p><label for="Names" id="fnamelbl"><b>First Name</b></label><input type = "text" id="reginputbox" placeholder="Enter lastname" name="username" required></p>
-            	 <p><label for="Names" id="lnamelbl"><b>Last Name</b></label><input type = "text" id="reginputbox" placeholder="Enter first name" name="username" required></p>
-                 <p><label for="Email" id="emaillbl"><b>Email</b></label><input type = "text" id="reginputbox" placeholder="Enter your email" name="username" required></p>
-                 <p><label for="psw" id="regpswdlbl"><b>Password</b></label><input type = "password" id="reginputbox" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></p>
+			<form class="form" name="myform">
+				 <p><label for="Names" id="fnamelbl"><b>First Name</b></label><input type = "text" id="fname" 
+					placeholder="Enter firstname" name="fname"></p><h3 id="fname_error"></h3>
+				
+				 <p><label for="Names" id="lnamelbl"><b>Last Name</b></label><input type = "text" id="lname" 
+					placeholder="Enter last name" name="lname"></p><h3 id="lname_error"></h3>
+
+				 <p><label for="Email" id="emaillbl"><b>Email</b></label><input type = "text" id="reginputbox" 
+					placeholder="Enter your email" name="email"></p><h3 id="email_error"></h3>
+
+				 <p><label for="psw" id="regpswdlbl"><b>Password</b></label><input type = "password" id="reginputbox" 
+					placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password"></p><h3 id="password_error"></h3>
+
                  <button type= "submit" id="regbtn"> <b>Submit</b> </button>
             </form>
                 <p><form method="get" action="Login.html" class="loginreg">
@@ -53,7 +64,6 @@
 	            	</form>
 	    </div>    
         </main>    
-<hr>
 <footer>
 	<h2>Connect On:</h2>
 	<img src="./Assets/instagram.png">
@@ -62,4 +72,31 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
+<script type="text/javascript" src="./form.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
+	  authDomain: "fresh-blogs.firebaseapp.com",
+	  databaseURL: "https://fresh-blogs.firebaseio.com",
+	  projectId: "fresh-blogs",
+	  storageBucket: "fresh-blogs.appspot.com",
+	  messagingSenderId: "1018716457862",
+	  appId: "1:1018716457862:web:42a409cc9cf2f352177a07",
+	  measurementId: "G-D38PK9ZNW4"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+	const db = firebase.firestore();
+	const auth = firebase.auth();
+  </script>
+<script src="./auth.js"></script>
 </body>
