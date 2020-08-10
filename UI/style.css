@@ -176,7 +176,6 @@ footer img{
   padding-bottom: 0px;
   padding-right: 120px;
   padding-left: 20px
-  border: none;
 }
 footer h2 img{
   display: inline-flex;
@@ -398,8 +397,13 @@ footer h2 img{
     width: 200px;
     height: 20px;
   }
+  
   .register p{
     display: flex;
+  }
+  .register .form h3{
+    color: red;
+    font-size: medium;
   }
   .register{
     margin: 0px 0px 0px 450px;
@@ -433,6 +437,10 @@ footer h2 img{
         height: 25px;
         background-color: green;
       }
+      #usernameerror{
+        display: none;
+        color: red;
+      }
       /*Beginning Of Contact page*/
       #contact h1 {
     line-height: 60px;
@@ -440,17 +448,9 @@ footer h2 img{
     color: #F2AA4C;
     padding: 60px 0px 0px 0px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-decoration: underline; 
 }
-      #contact h3{
-    line-height: 20px;
-    text-align: center;
-    color: orange;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-      }
      .register #namesinputbox{
     width: 200px;
     height: 20px;
@@ -482,8 +482,8 @@ footer h2 img{
   #thanks{
     color: orange;
     padding-left: 100px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-top: 20px;
     margin-top: 0px;
     font-weight: bold;
   }
@@ -795,6 +795,15 @@ opacity: 0.5;
         background-color: green;
         cursor: pointer;
       }
+      /*Beginning of post-list*/
+      .post-list p  {
+       align-items: center;
+      }
+      /*Beginning of message-list*/
+      .messagelist p  {
+        align-items: center;
+       }
+
       /*Beginnning Of Media Queries*/
 @media(max-width: 900px){
   header{
@@ -980,4 +989,3 @@ main{
 .bio{
   display: inline-block;
 }
-
