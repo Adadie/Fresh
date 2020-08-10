@@ -1,6 +1,6 @@
 body {
   /*background-image: url("C:/Users/Vadivel/Pictures/FreshRepo/UI/Assets/darkbgr.jpg");*/
-  background-color: #101820;
+  background-color: #101820FF;
   margin: 0 0 0 0;
   padding: 0;
 }
@@ -111,25 +111,27 @@ nav ul li a:hover{
 line-height: 30px;
   text-align: center;
   color: #F2AA4C;
-  padding-top: 200px;
+  padding-top: 30px;
   font-size: 30px;
 }
  /*pic with intro*/
 .intro{
   display: inline-block;
   margin-left: 40px;
+  line-height: 60px;
   float: right;
   width: 100%;
-  opacity: 1;
 }
 .intro ul li .profile{
-  width: 20%;
+  width: 15%;
+  height: 270px;
   float: right;
   padding: 0px;
   margin-right: 40px;
   border-radius: 20px;
   background-size: 100% 100%;
-  border: 20px solid black;
+  border: 15px solid black;
+  border: 10px solid black;
 }
 .intro ul li{
   display: inline;
@@ -174,7 +176,6 @@ footer img{
   padding-bottom: 0px;
   padding-right: 120px;
   padding-left: 20px
-  border: none;
 }
 footer h2 img{
   display: inline-flex;
@@ -338,7 +339,7 @@ footer h2 img{
   .login{
     padding:0px;
     margin-left: 400px;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
   }
   #namelbl{
     color: white;
@@ -396,8 +397,13 @@ footer h2 img{
     width: 200px;
     height: 20px;
   }
+  
   .register p{
     display: flex;
+  }
+  .register .form h3{
+    color: red;
+    font-size: medium;
   }
   .register{
     margin: 0px 0px 0px 450px;
@@ -431,7 +437,20 @@ footer h2 img{
         height: 25px;
         background-color: green;
       }
+      #usernameerror{
+        display: none;
+        color: red;
+      }
       /*Beginning Of Contact page*/
+      #contact h1 {
+    line-height: 60px;
+    text-align: center;
+    color: #F2AA4C;
+    padding: 60px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-decoration: underline; 
+}
      .register #namesinputbox{
     width: 200px;
     height: 20px;
@@ -444,14 +463,14 @@ footer h2 img{
   }
    .register #messageinputbox{
     width: 200px;
-    height: 80px;
+    height: 60px;
     margin-left: 0px;
   }
   .register #commentslabel{
     width: 72px;
   }
   #messagebtn{
-     margin: 20px 20px 50px 200px;
+     margin: 10px 20px 10px 200px;
     width: 90px;
     background-color: orange;
   }
@@ -459,6 +478,14 @@ footer h2 img{
        width: 100px;
     background-color: green;
 
+  }
+  #thanks{
+    color: orange;
+    padding-left: 100px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    margin-top: 0px;
+    font-weight: bold;
   }
 
       /*beginning OF Profile page*/ 
@@ -497,6 +524,8 @@ main{
   width: 150px;
   height: 200px
   margin: 50px;
+  margin-bottom: 10px;
+  margin-top: 0px;
   font-size: 20px;
   position: static;
   line-height: 30px;
@@ -524,7 +553,7 @@ color: white;
 color: green;
 margin-left: 200px;
 margin-top: 50px;
-margin-bottom: 60px;
+margin-bottom: 70px;
 }
 #subscribebtn{
   margin-left: 200px;
@@ -534,7 +563,249 @@ margin-bottom: 60px;
   background-color: green;
   cursor: pointer;
 }
-@media(max-width: 768px){
+/*Beginning of dashboard*/
+/*This is the sub nav bar*/
+.user{
+  display: inline-block;
+}
+#username{
+  float: left;
+  padding: 10px 40px 20px 40px;
+  color: white;
+}
+.dashboardsettings h3{
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+.dashboardsettings h3 span{
+  color: orange;
+  text-decoration: underline;
+}
+#userprofile{
+  padding: 20px 0px 20px 10px;
+  width: 60px;
+  height: 80px;
+}
+.subnav{
+    padding-top: 20px;
+    width: 100%;
+    position: sticky;
+    top: 30px;
+}
+.subnav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.subnav ul li a{
+  color: white;
+  text-decoration: none;
+}
+/*Info update*/
+.dashboardsettings hr{
+padding: 30px 10px 30px 10px;
+background-color: black;
+opacity: 0.5;
+}
+  #profileinfo{
+  display: flex;
+  margin: 20px 40px 10px 30px;
+  padding: 0px 30px 10px 0px;
+  }
+  #profileinfo h1{
+  color: orange;
+  font-size: 40px;
+  }
+  #newfnamelbl{
+    padding-right: 80px;
+  }
+  #newlnamelbl{
+    padding-right: 80px;
+  }
+  .dashboard  #newemaillbl{
+        margin-left: 0px;
+        margin-right: 120px;
+  }
+  #oldpswdlbl{
+    padding-right: 30px;
+  }
+  #newpswdlbl{
+    padding-right: 25px; 
+    margin-left: 35px;
+  }
+  .dashboard #reinputbox{
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+  }
+  .dashboard{
+    margin: 0px 0px 0px 100px;
+    padding-top: 30px;
+    color: white;
+      }
+  
+  #updatebtn{
+        border-radius: 15%;
+        margin-left: 180px;
+        width: 210px;
+        height: 30px;
+      }
+  #updatebtn:hover{
+        background-color: green; 
+        height: 33px;
+        cursor: pointer;
+      }
+      .dashboard hr{
+       margin:50px 0px 70px 0px;
+      }
+      /*View Posted Blogs*/
+      #postedblogs{
+        color: white;
+      }
+      #postedblogs h1{
+        color: orange;
+        font-size: 40px;
+        text-decoration: underline;
+      }
+      #postedblogs img{
+        width: 200px;
+        height: 200px;
+        padding: 20px 20px 20px 20px;
+      }
+      #postedblogs p{
+        width: 400px;
+        height: 200px;
+      }
+      #postedblogs .card{
+        display: flex;
+        overflow: hidden;
+      }
+      .blog{
+        display: inline-block;
+      }
+      .blogbtns{
+        margin-left: 200px;
+        margin-bottom: 50px;
+      }
+      .blogbtns a{
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        margin-right: 50px;
+        padding: 10px;
+        font-weight: bold;
+      }
+      /*Beginning of articles section*/
+      #postedarticles{
+        color: white; 
+      }
+      #postedarticles h1{
+        font-size: 46px;
+        color: orange;
+        text-decoration: underline;
+      }
+      #postedarticles p{
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        display: inline-block;
+      }
+      /*Beginning of new post form*/
+      #newpost{
+        color: white;
+      }
+      #newpost h1{
+        color: orange;
+        font-size: 46px;
+        text-decoration: underline;
+      }
+      .postform #authornames{
+        padding-right: 80px;
+      }
+      .postform #titlellbl{
+        padding-right: 155px;
+      }
+      .postform #contentlbl{
+        padding-right: 130px;
+      }
+      .postform #citation{
+        padding-right: 40px;
+      }
+      .postform #upload{
+        padding-right: 40px;
+      }
+      .postform #contentinputbox{
+       height: 100px;
+      }
+      #postblog{
+        background-color: orange;
+      }
+      #postarticle{
+        background-color: orange;
+      }
+      #postblog:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      #postarticle:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      /*Beginning of edit post form*/
+      #editpost{
+        color: white;
+      }
+      #editpost h1{
+        color: orange;
+        font-size: 46px;
+        text-decoration: underline;
+      }
+      
+      /*Beaginning of reminder settings*/
+      #reminder{
+        color: white;
+      }
+      #reminder h1{
+        color: orange;
+        text-decoration: underline;
+      }
+      #newrem{
+        padding-right: 20px;
+      }
+      #reminder ol{
+        list-style: none;
+      }
+      #reminder a{
+        text-decoration: none;
+        color: white;
+        background-color: grey;
+        margin-left: 20px;
+        font-weight: bold; 
+      }
+      #setrembtn{
+        background-color: orange;
+      }
+      #setrembtn:hover{
+        background-color: green;
+        cursor: pointer;
+      }
+      /*Beginning of post-list*/
+      .post-list p  {
+       align-items: center;
+      }
+      /*Beginning of message-list*/
+      .messagelist p  {
+        align-items: center;
+       }
+
+      /*Beginnning Of Media Queries*/
+@media(max-width: 900px){
   header{
     width: 100%;
     margin: 0px;
@@ -573,6 +844,16 @@ margin-bottom: 60px;
   padding-top: 100px;
   font-size: 15px;
   padding-bottom: 20px;
+}
+.intro ul li .profile{
+  width: 25%;
+  height: 200px;
+  float: right;
+  padding: 0px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  border: 10px solid black;
 }
 .intro ul li h2{
   width: 300px;
@@ -708,4 +989,3 @@ main{
 .bio{
   display: inline-block;
 }
-
