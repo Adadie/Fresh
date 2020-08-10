@@ -803,6 +803,10 @@ opacity: 0.5;
       .messagelist p  {
         align-items: center;
        }
+       .messagelist .btn{
+        background-color: #F2AA4C;
+      }
+
 
       /*Beginnning Of Media Queries*/
 @media(max-width: 900px){

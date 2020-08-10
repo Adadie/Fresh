@@ -36,8 +36,10 @@ function renderpost(doc){
     let Info = document.createElement('p');
     let Citation = document.createElement('h5');
     let Delete = document.createElement('button');
+    Delete.setAttribute("class", "btn");
     let update = document.createElement('button');
-
+    update.setAttribute("class", "btn");
+    
     li.setAttribute('data-id', doc.id);
     Author_Names.textContent = doc.data().Author_Names;
     Description.textContent = doc.data().Description;

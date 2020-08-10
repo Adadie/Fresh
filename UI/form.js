@@ -1,5 +1,5 @@
 //Declare inputbox variables
-var form = document.querySelector(".form");
+var form = document.querySelector(".signupform");
 var fname = document.forms.myform.fname;
 var lname = document.forms.myform.lname;
 var email = document.forms.myform.email;
@@ -21,22 +21,25 @@ form.addEventListener("submit", function (e) {
   if (fname.value == "") {
     fname_error.textContent = "Input your first name";
     fname.style.border = "2px solid white";
-    fname.focus();
+    fname_error.style.color = "red";
     return false;
   }
   if (lname.value == "") {
     lname_error.textContent = "Please enter your last name";
     lname.style.border = "2px outset white";
+    lanme_error.style.color = "red";
     return false;
   }
   if (email.value == "") {
     email_error.textContent = "Please enter your email";
     email.style.border = "2px solid white";
+    email_error.style.color = "red";
     return false;
   }
   if (password.value == "") {
     password_error.textContent = "Please enter your password";
     password.style.border = "2px solid red";
+    password_error.style.color = "red";
     return false;
   }
 });
