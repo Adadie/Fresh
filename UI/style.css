@@ -337,9 +337,9 @@ footer h2 img{
   }
   /*Beginning of login page*/
   .login{
-    padding:0px;
-    margin-left: 400px;
-    margin-bottom: 70px;
+    align-items: center;
+    display: block;
+    margin-bottom: 200px;
   }
   #namelbl{
     color: white;
@@ -795,18 +795,36 @@ opacity: 0.5;
         background-color: green;
         cursor: pointer;
       }
+      
       /*Beginning of post-list*/
       .post-list p  {
-       align-items: center;
-      }
-      /*Beginning of message-list*/
-      .messagelist p  {
+        padding-bottom: 0px;
         align-items: center;
+        max-height: 100px;
+        overflow: hidden;
        }
-       .messagelist .btn{
-        background-color: #F2AA4C;
-      }
+       .post-list .btn{
+         background-color: orange;
+         margin-right: 50px;
+       }
+       .post-list .updatebtn{
+         background-color: green;
+ 
+       }
+       /*Beginning of message-list*/
+       #messagelist li {
+        max-height: 300px;
+        overflow: hidden;
+       }
+       #messagelist h5 {
+         align-items: center;
+         color: white;
+        }
+        #messagelist h2{
+          color: orange;
+        }
 
+ 
 
       /*Beginnning Of Media Queries*/
 @media(max-width: 900px){

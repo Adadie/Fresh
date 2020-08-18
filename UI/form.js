@@ -15,7 +15,7 @@ lname.addEventListener("blur", lnameok, true);
 email.addEventListener("blur", emailok, true);
 password.addEventListener("blur", passwordok, true);
 //validate function
-form.addEventListener("submit", function (e) {
+function regvalidation (e) {
   e.preventDefault();
   //start if statements
   if (fname.value == "") {
@@ -42,7 +42,7 @@ form.addEventListener("submit", function (e) {
     password_error.style.color = "red";
     return false;
   }
-});
+};
 //Event handler functions
 function fnameok() {
   if (fname.value != "") {

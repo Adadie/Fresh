@@ -36,17 +36,17 @@ function renderpost(doc){
     let Info = document.createElement('p');
     let Citation = document.createElement('h5');
     let Delete = document.createElement('button');
-    Delete.setAttribute("class", "btn");
     let update = document.createElement('button');
-    update.setAttribute("class", "btn");
-    
+
     li.setAttribute('data-id', doc.id);
     Author_Names.textContent = doc.data().Author_Names;
     Description.textContent = doc.data().Description;
     Info.textContent = doc.data().Info;
     Citation.textContent = doc.data().Citation;
     Delete.textContent = 'Delete';
+    Delete.setAttribute("class", "btn");
     update.textContent = 'Update';
+    update.setAttribute("class", "updatebtn");
 
     li.appendChild(Author_Names);
     li.appendChild(Description);
@@ -63,14 +63,37 @@ function renderpost(doc){
         db.collection('Posts').doc(id).delete();
     });
     
-    /* // Updating data
+    //Updating data
  update.addEventListener('click', (e) => {
-    e.stopPropagation();
     let id = e.target.parentElement.getAttribute('data-id');
-    db.collection('Posts').doc(id).update();
-});*/
+    window.location.href = "profile.html#editpost";
+   /* db.collection('Posts').doc(id).update({Description:'data-id', Info:'data-id', Author_Names:'Junior', Citation:'data-id'})
+    .then(function() {
+        console.log("Document successfully updated!");
+        window.location.href = "profile.html#editpost"
+    })
+    .catch(function(error) {
+        // The document probably doesn't exist.
+        console.error("Error updating document: ", error);
+    }); */
+    const editform = document.querySelector('.editform');
+    db.collection('Posts').doc(id).get().then(article=>{
+     editform['authorinputbox'].value= doc.data().Author_Names;
+     editform['titleinputbox'].value= doc.data().Description;
+     editform['contentinputbox'].value= doc.data().Info;
+     editform['citationinputbox'].value= doc.data().Citation;
+ })
+});
 }
-
+var edit = document.getElementById('postarticle');
+    edit.addEventListener('click', (e)=>{
+    returndb.collection('Posts').doc(id).update({
+    Author_Names: editform['authorinputbox'].value,  
+    Description: editform['titleinputbox'].value,
+    Info: editform['contentinputbox'].value,
+    Citation: editform['citationinputbox'].value,
+    })
+})
 
 // real-time listener
 db.collection('Posts').onSnapshot(snapshot => {
@@ -83,12 +106,15 @@ db.collection('Posts').onSnapshot(snapshot => {
             let li = postlist.querySelector('[data-id=' + change.doc.id + ']');
             postlist.removeChild(li);
         }
-        if (change.type === "modified") {
+      /* if (change.type === "modified") {
             let li = postlist.querySelector('[data-id=' + change.doc.id + ']');
             postlist.updateChild(li);
-        }
+        }*/
     });
 });
+ 
+
+
 
 /*// getting data
 db.collection('Posts').get().then(snapshot => {

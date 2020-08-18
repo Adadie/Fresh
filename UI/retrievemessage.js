@@ -1,27 +1,12 @@
 const contactform = document.querySelector("#contactform");
-const messagebtn = document.getElementById('messagebtn');
-
-//Messages
-
-//Saving new messages to firestore
-function send(e) {
-    e.preventDefault();
-    db.collection('Messages').add({
-        Names: contactform.names.value,
-        email: contactform.email.value,
-        Message: contactform.message.value,
-        Comments: contactform.comments.value,
-    })
-    contactform.reset();
-}
-messagebtn.addEventListener('click', send);
+const messagelist = document.querySelector('#messagelist');
 
 // create element & render message
 function rendermessages(doc){
     let li = document.createElement('li');
     let Names = document.createElement('h2');
     let email = document.createElement('h5');
-    let Message = document.createElement('h5');
+    let Message = document.createElement('p');
     let Comments = document.createElement('h5');
     let Delete = document.createElement('button');
     let update = document.createElement('button');

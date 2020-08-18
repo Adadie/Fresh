@@ -36,21 +36,25 @@
     </nav>
     </div>
 </header>
-             <!--body starts here--> 
+	 <button type= "submit" id="googlesignin"> <b>Google Signin</b></button>
+			 <!--body starts here--> 
         <div id="blog">
           <h1><b>LOGIN</b></h1>
         </div>
-        <div class="login" action="profiles.html">
+        <div class="login">
             <form name="form" id="loginForm">
-                 <p><label for="Names" id="namelbl"><b>Email</b></label><input type = "email" id="namebox" placeholder="Enter email" name="email"></p>
+				<div id="firebaseui-auth-container"></div>
+                 <!--<p><label for="Names" id="namelbl"><b>Email</b></label><input type = "email" id="namebox" placeholder="Enter email" name="email"></p>
                  <p><label for="psw" id="pswdlbl"><b>Password</b></label><input type = "password" id="pswdbox" placeholder="Enter password" name="password"></p>
-                 <h5><a href="#">Forgot Password</a></h5>
+				 -->
+				 <!--
+				 <h5><a href="#">Forgot Password</a></h5>
                  <button type= "submit" id="loginbtn"> <b>Submit</b></button>
-            </form>
+                 </form>
                 <p><form method="get" action="signup.html" class="signup">
-	                    <label for="comment" id="signuplbl">Don't have an account?</label>
-	                    <button type= "submit" id="signupbtn"> Sign UP </button></form></p>
-	            	</form>
+	                    <label for="comment" id="loginbtn"> Sign UP </button></form></p>
+					</form>
+					-->
 	    </div>    
             
 <footer>
@@ -68,6 +72,9 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
 <script>
 	// Your web app's Firebase configuration
 	var firebaseConfig = {
@@ -85,7 +92,29 @@
 	firebase.analytics();
 	const db = firebase.firestore();
 	const auth = firebase.auth();
+	var provider = new firebase.auth.GoogleAuthProvider();
   </script>
+  <script>
+	 /* function googlesignin(){
+  auth.signInWithPopup(provider).then(function(result) {
+	// This gives you a Google Access Token. You can use it to access the Google API.
+	var token = result.credential.accessToken;
+	// The signed-in user info.
+	var user = result.user;
+	// ...
+  }).catch(function(error) {
+	// Handle Errors here.
+	var errorCode = error.code;
+	var errorMessage = error.message;
+	// The email of the user's account used.
+	var email = error.email;
+	// The firebase.auth.AuthCredential type that was used.
+	var credential = error.credential;
+	// ...
+  });
+}
+document.getElementById('googlesignin').addEventListener('click', googlesignin);*/
+</script>
 <!--<script src="./signupfirestore.js"></script>-->
-<script src="./auth.js"></script>
+<script src="./loginauth.js"></script>
 </body>
