@@ -36,25 +36,19 @@
     </nav>
     </div>
 </header>
-	 <button type= "submit" id="googlesignin"> <b>Google Signin</b></button>
 			 <!--body starts here--> 
         <div id="blog">
           <h1><b>LOGIN</b></h1>
         </div>
         <div class="login">
             <form name="form" id="loginForm">
-				<div id="firebaseui-auth-container"></div>
-                 <!--<p><label for="Names" id="namelbl"><b>Email</b></label><input type = "email" id="namebox" placeholder="Enter email" name="email"></p>
+                 <p><label for="Names" id="namelbl"><b>Email</b></label><input type = "email" id="namebox" placeholder="Enter email" name="email"></p>
                  <p><label for="psw" id="pswdlbl"><b>Password</b></label><input type = "password" id="pswdbox" placeholder="Enter password" name="password"></p>
-				 -->
-				 <!--
+				 
 				 <h5><a href="#">Forgot Password</a></h5>
-                 <button type= "submit" id="loginbtn"> <b>Submit</b></button>
+				 <button type= "submit" id="loginbtn"> <b>Submit</b></button>
+				 <p><label for="comment" id="loginbtn"><button> Sign UP </button></p>
                  </form>
-                <p><form method="get" action="signup.html" class="signup">
-	                    <label for="comment" id="loginbtn"> Sign UP </button></form></p>
-					</form>
-					-->
 	    </div>    
             
 <footer>
@@ -66,16 +60,16 @@
 	<img src="./Assets/youtube.png">
 </footer>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" /> 
 
-<script>
+ <script>
 	// Your web app's Firebase configuration
 	var firebaseConfig = {
 	  apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
@@ -112,9 +106,10 @@
 	var credential = error.credential;
 	// ...
   });
-}
-document.getElementById('googlesignin').addEventListener('click', googlesignin);*/
+}-->
+<!--document.getElementById('googlesignin').addEventListener('click', googlesignin);*/
 </script>
-<!--<script src="./signupfirestore.js"></script>-->
-<script src="./loginauth.js"></script>
+<script src="./signupfirestore.js"></script>
+<script src="./loginauth.js"></script> -->
+<script src='./Integration/login.js'></script>
 </body>
