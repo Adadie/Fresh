@@ -808,6 +808,7 @@ opacity: 0.5;
         overflow: hidden;
         width: 900px;
       }
+
       .post-list h2{
         color: #F2AA4C;
       }
@@ -854,6 +855,7 @@ opacity: 0.5;
         }
 
  
+
 
       /*Beginnning Of Media Queries*/
 @media(max-width: 900px){

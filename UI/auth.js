@@ -1,9 +1,12 @@
 
 // signup
 const signupForm = document.querySelector('.signupform');
+
 const regbtn = document.getElementById('regbtn');
 
 function reg(e)  {
+signupForm.addEventListener('submit', (e) => {
+
   e.preventDefault();
   // get user info
   const email = signupForm.email.value;
@@ -22,6 +25,7 @@ function reg(e)  {
 };
 regbtn.addEventListener('click', reg);
 signupForm.reset();
+});
 /*
 //Login
 const loginForm = document.querySelector('#loginForm');
@@ -40,3 +44,4 @@ auth.signInUserWithEmailAndPassword(email.value, password.value).then(cred => {
 };
 loginbtn.addEventListener('click', login) 
 loginForm.reset();*/
+});*/

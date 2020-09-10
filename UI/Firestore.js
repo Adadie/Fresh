@@ -66,6 +66,7 @@ function renderpost(doc){
     //Updating data
  update.addEventListener('click', (e) => {
     let id = e.target.parentElement.getAttribute('data-id');
+
     window.location.href = "profile.html#editpost";
    /* db.collection('Posts').doc(id).update({Description:'data-id', Info:'data-id', Author_Names:'Junior', Citation:'data-id'})
     .then(function() {
@@ -82,7 +83,11 @@ function renderpost(doc){
      editform['titleinputbox'].value= doc.data().Description;
      editform['contentinputbox'].value= doc.data().Info;
      editform['citationinputbox'].value= doc.data().Citation;
- })
+ 
+
+    db.collection('Posts').doc(id).update();
+    window.location.href = "profile.html#editpost"
+})
 });
 }
 var edit = document.getElementById('postarticle');
