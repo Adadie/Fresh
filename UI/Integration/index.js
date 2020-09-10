@@ -10,7 +10,7 @@ function reg(e)  {
   const email = signupForm.email.value;
   const password = signupForm.password.value;
   
-  fetch(`http://localhost:5000/users`, {
+  fetch(`${BASE_URL}/users`, {
     method: "POST",
     headers: {accept: "application/json",
     "content-Type": "application/json"},

@@ -10,7 +10,7 @@ function login(e)  {
   const email = loginForm.email.value;
   const password = loginForm.password.value;
   
-  fetch(`http://localhost:5000/users/login`, {
+  fetch(`${BASE_URL}/users/login`, {
     method: "POST",
     headers: {accept: "application/json",
     "content-Type": "application/json"},
