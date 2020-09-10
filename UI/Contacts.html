@@ -30,7 +30,7 @@
 		   <li><a href="Contacts.html"> Contact Me</a></li>
 		   <li><a href="Login.html"> Login</a></li>
 		   <li><a href="signup.html"> Sign Up</a></li>
-		   <li><a href="Login.html"> <img src="./Assets/user.png" id="usericon"></a></li>
+		   <li><a href="profile.html"> <img src="./Assets/user.png" id="usericon"></a></li>
 		</ul>
     </nav>
     </div>
@@ -41,9 +41,9 @@
         </div>
         <div class="register">
             <form class="form" id="contactform" name="contactform">
-            	 <p><label for="Names" id="nameslabel">Names</label><input type = "text" id="namesinputbox" placeholder="Enter your names" name="names" required></p>
-                 <p><label for="Email" id="emaillabel">Email</label><input type = "text" id="emailinputbox" placeholder="Enter your email" name="email" required></p>
-            	 <p><label for="Names" id="messagelabel">Message</label><input type = "text" id="messageinputbox" placeholder="Enter your message" name="message" required></p>
+            	 <p><label for="Names" id="nameslabel">Names</label><input type = "text" id="namesinputbox" placeholder="Enter your names" name="names"></p>
+                 <p><label for="Email" id="emaillabel">Email</label><input type = "text" id="emailinputbox" placeholder="Enter your email" name="email"></p>
+            	 <p><label for="Names" id="messagelabel">Message</label><input type = "text" id="messageinputbox" placeholder="Enter your message" name="message"></p>
                  <p><label for="psw" id="commentslabel">How was your site experience?</label><input type = "text" id="commentsinputbox" placeholder="Enter any comments" name="comments"></p>
                  <button id="messagebtn"> Send </button>
             </form>
@@ -58,7 +58,7 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -81,6 +81,5 @@
 	firebase.analytics();
 	const db = firebase.firestore();
   </script>
-<script src="./form.js"></script>
 <script src="./messagesfirestore.js"></script>
 </body>

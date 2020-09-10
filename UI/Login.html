@@ -36,21 +36,19 @@
     </nav>
     </div>
 </header>
-             <!--body starts here--> 
+			 <!--body starts here--> 
         <div id="blog">
           <h1><b>LOGIN</b></h1>
         </div>
         <div class="login">
-            <form action="profile.html">
-                 <p><label for="Names" id="namelbl"><b>Username</b></label><input type = "text" id="namebox" placeholder="Enter username" name="username"></p>
-                 <p><label for="psw" id="pswdlbl"><b>Password</b></label><input type = "password" id="pswdbox" placeholder="Enter password"></p>
-                 <h5><a href="#">Forgot Password</a></h5>
-                 <button type= "submit" id="loginbtn"> <b>Submit</b></button>
-            </form>
-                <p><form method="get" action="signup.html" class="signup">
-	                    <label for="comment" id="signuplbl">Don't have an account?</label>
-	                    <button type= "submit" id="signupbtn"> Sign UP </button></form></p>
-	            	</form>
+            <form name="form" id="loginForm">
+                 <p><label for="Names" id="namelbl"><b>Email</b></label><input type = "email" id="namebox" placeholder="Enter email" name="email"></p>
+                 <p><label for="psw" id="pswdlbl"><b>Password</b></label><input type = "password" id="pswdbox" placeholder="Enter password" name="password"></p>
+				 
+				 <h5><a href="#">Forgot Password</a></h5>
+				 <button type= "submit" id="loginbtn"> <b>Submit</b></button>
+				 <p><label for="comment" id="loginbtn"><button> Sign UP </button></p>
+                 </form>
 	    </div>    
             
 <footer>
@@ -61,4 +59,57 @@
 	<img src="./Assets/linkedin.png">
 	<img src="./Assets/youtube.png">
 </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" /> 
+
+ <script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyAG9xWO2D5xw4n_KJortnAb-dmW_7Ysnvw",
+	  authDomain: "fresh-blogs.firebaseapp.com",
+	  databaseURL: "https://fresh-blogs.firebaseio.com",
+	  projectId: "fresh-blogs",
+	  storageBucket: "fresh-blogs.appspot.com",
+	  messagingSenderId: "1018716457862",
+	  appId: "1:1018716457862:web:42a409cc9cf2f352177a07",
+	  measurementId: "G-D38PK9ZNW4"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+	const db = firebase.firestore();
+	const auth = firebase.auth();
+	var provider = new firebase.auth.GoogleAuthProvider();
+  </script>
+  <script>
+	 /* function googlesignin(){
+  auth.signInWithPopup(provider).then(function(result) {
+	// This gives you a Google Access Token. You can use it to access the Google API.
+	var token = result.credential.accessToken;
+	// The signed-in user info.
+	var user = result.user;
+	// ...
+  }).catch(function(error) {
+	// Handle Errors here.
+	var errorCode = error.code;
+	var errorMessage = error.message;
+	// The email of the user's account used.
+	var email = error.email;
+	// The firebase.auth.AuthCredential type that was used.
+	var credential = error.credential;
+	// ...
+  });
+}-->
+<!--document.getElementById('googlesignin').addEventListener('click', googlesignin);*/
+</script>
+<script src="./signupfirestore.js"></script>
+<script src="./loginauth.js"></script> -->
+<script src='./Integration/login.js'></script>
 </body>

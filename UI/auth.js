@@ -1,8 +1,13 @@
+
 // signup
 const signupForm = document.querySelector('.signupform');
+
+const regbtn = document.getElementById('regbtn');
+
+function reg(e)  {
 signupForm.addEventListener('submit', (e) => {
+
   e.preventDefault();
-  
   // get user info
   const email = signupForm.email.value;
   const password = signupForm.password.value;
@@ -17,11 +22,15 @@ signupForm.addEventListener('submit', (e) => {
       //reset form
       signupForm.reset();
     });
+};
+regbtn.addEventListener('click', reg);
+signupForm.reset();
 });
 /*
 //Login
 const loginForm = document.querySelector('#loginForm');
-loginForm.addEventListener('submit', (e) => {
+const loginbtn = document.getElementById('loginbtn')
+function login(e) {
   e.preventDefault();
   
   // get user info
@@ -32,4 +41,7 @@ auth.signInUserWithEmailAndPassword(email.value, password.value).then(cred => {
       //reset form
       loginForm.reset();
     });
+};
+loginbtn.addEventListener('click', login) 
+loginForm.reset();*/
 });*/

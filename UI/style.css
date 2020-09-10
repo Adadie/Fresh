@@ -95,7 +95,7 @@ nav ul li a:hover{
   display: block;
   margin: 10px;
   background-color: white;
-  opacity: 0.5
+  opacity: 0.5;
   width: 150px;
   padding: 10px;
   text-align: left;
@@ -116,7 +116,7 @@ line-height: 30px;
 }
  /*pic with intro*/
 .intro{
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 40px;
   line-height: 60px;
   float: right;
@@ -337,9 +337,9 @@ footer h2 img{
   }
   /*Beginning of login page*/
   .login{
-    padding:0px;
-    margin-left: 400px;
-    margin-bottom: 70px;
+    align-items: center;
+    display: block;
+    margin-bottom: 200px;
   }
   #namelbl{
     color: white;
@@ -363,7 +363,7 @@ footer h2 img{
   }
   #namebox{
     width: 40%;
-    margin: 20px;
+    margin: 60px;
     opacity: 0.7;
   }
   #pswdbox{
@@ -507,7 +507,7 @@ footer h2 img{
   display: block;
   margin: 10px;
   background-color: white;
-  opacity: 0.5
+  opacity: 0.5;
   width: 150px;
   padding: 10px;
   text-align: left;
@@ -522,7 +522,7 @@ main{
 .bio p {
   float: left;
   width: 150px;
-  height: 200px
+  height: 200px;
   margin: 50px;
   margin-bottom: 10px;
   margin-top: 0px;
@@ -795,22 +795,66 @@ opacity: 0.5;
         background-color: green;
         cursor: pointer;
       }
+      
       /*Beginning of post-list*/
+      .post-list{
+        display: flex;
+        list-style: none;
+        margin: 30px;
+      }
+      .post-list li{
+        margin: 30px;
+        display: block;
+        overflow: hidden;
+        width: 900px;
+      }
+
+      .post-list h2{
+        color: #F2AA4C;
+      }
       .post-list p  {
-       align-items: center;
+        padding-bottom: 0px;
+        align-items: center;
+        height: 100px;
+        overflow: hidden;
+       }
+       .post-list .btn{
+         background-color: orange;
+         margin-right: 50px;
+         margin-left: 200px;
+        margin-bottom: 50px;
+       }
+       .post-list .updatebtn{
+         background-color: green;
+         margin-left: 200px;
+        margin-bottom: 50px;
+ 
+       }
+       .post-list .btn:hover{
+        background-color: rgb(45, 71, 45);
+        cursor: pointer;
+        color: whitesmoke;
       }
-      .post-list .btn{
-        background-color: orange;
-        margin-right: 50px;
-      }
-      .post-list .updatebtn{
-        background-color: green;
+      .post-list .updatebtn:hover{
+        background-color: rgb(45, 71, 45);
+        cursor: pointer;
+        color: whitesmoke;
 
       }
-      /*Beginning of message-list*/
-      .messagelist p  {
-        align-items: center;
+       /*Beginning of message-list*/
+       #messagelist li {
+        max-height: 300px;
+        overflow: hidden;
        }
+       #messagelist h5 {
+         align-items: center;
+         color: white;
+        }
+        #messagelist h2{
+          color: orange;
+        }
+
+ 
 
 
       /*Beginnning Of Media Queries*/
@@ -997,4 +1041,5 @@ main{
 }
 .bio{
   display: inline-block;
+}
 }

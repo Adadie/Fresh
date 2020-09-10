@@ -66,11 +66,39 @@ function renderpost(doc){
     //Updating data
  update.addEventListener('click', (e) => {
     let id = e.target.parentElement.getAttribute('data-id');
+
+    window.location.href = "profile.html#editpost";
+   /* db.collection('Posts').doc(id).update({Description:'data-id', Info:'data-id', Author_Names:'Junior', Citation:'data-id'})
+    .then(function() {
+        console.log("Document successfully updated!");
+        window.location.href = "profile.html#editpost"
+    })
+    .catch(function(error) {
+        // The document probably doesn't exist.
+        console.error("Error updating document: ", error);
+    }); */
+    const editform = document.querySelector('.editform');
+    db.collection('Posts').doc(id).get().then(article=>{
+     editform['authorinputbox'].value= doc.data().Author_Names;
+     editform['titleinputbox'].value= doc.data().Description;
+     editform['contentinputbox'].value= doc.data().Info;
+     editform['citationinputbox'].value= doc.data().Citation;
+ 
+
     db.collection('Posts').doc(id).update();
     window.location.href = "profile.html#editpost"
+})
 });
 }
-
+var edit = document.getElementById('postarticle');
+    edit.addEventListener('click', (e)=>{
+    returndb.collection('Posts').doc(id).update({
+    Author_Names: editform['authorinputbox'].value,  
+    Description: editform['titleinputbox'].value,
+    Info: editform['contentinputbox'].value,
+    Citation: editform['citationinputbox'].value,
+    })
+})
 
 // real-time listener
 db.collection('Posts').onSnapshot(snapshot => {
@@ -83,12 +111,15 @@ db.collection('Posts').onSnapshot(snapshot => {
             let li = postlist.querySelector('[data-id=' + change.doc.id + ']');
             postlist.removeChild(li);
         }
-        if (change.type === "modified") {
+      /* if (change.type === "modified") {
             let li = postlist.querySelector('[data-id=' + change.doc.id + ']');
             postlist.updateChild(li);
-        }
+        }*/
     });
 });
+ 
+
+
 
 /*// getting data
 db.collection('Posts').get().then(snapshot => {
