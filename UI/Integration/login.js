@@ -1,9 +1,4 @@
-//const { default: Axios } = require("axios");
-
 const BASE_URL = 'http://adadie2.herokuapp.com';
-// const postlist = document.querySelector('.post-list');
-// const postform = document.querySelector('#postform');
-
 // signup
 const loginForm = document.querySelector('#loginForm');
 const loginbtn = document.getElementById('loginbtn');

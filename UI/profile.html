@@ -49,6 +49,7 @@
                         <li><a href="profile.html#newpost">Create new post</li></a>
                         <li><a href="profile.html#postedblogs">View blogs</li></a>
                         <li><a href="profile.html#postedarticles">View article</li></a>
+                        <li><a href="profile.html#editpost">Edit</a></li>
                         <li><a href="profile.html#reminder">Reminder Settings</li></a>
                     </ul>
                  </nav>
@@ -168,6 +169,7 @@
                             <p><label for="text" id="citationlbl"><b>Insert citation if any:</b></label><input type = "text" id="citationinputbox" name="citation">
                             <!--<p><label for="text" id="upload"><b> Upload cover images</b></label><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()" id="uploadbox" name="cover"></p>-->
                             <p><button id="postblog"> Post Blog</button></p>
+                            <p><button id="showblog"> Post Blog</button></p>
                         </form>
                     </div>    
                 </section>
@@ -176,13 +178,13 @@
                        <h1>Edit mode</h1>
                     <div class="editpost">
                         <form class="editform">
-                            <p><label for="Names" id="authornames">Author_Names</label><input type = "text" id="authorinputbox" placeholder="Enter names" name="names" required></p>
-                            <p><label for="Email" id="titlellbl">Title</label><input type = "text" id="titleinputbox" placeholder="Enter description" name="email" required></p>
-                            <p><label for="text" id="contentlbl">Content</label><input type = "text" id="contentinputbox" placeholder="Enter your content" name="text" required></p>
+                            <p><label for="Names" id="authornames">Author_Names</label><input type = "text" id="authornameupdateinputbox" placeholder="Enter names" name="names" required></p>
+                            <p><label for="Email" id="titlellbl">Title</label><input type = "text" id="titleupdateinputbox" placeholder="Enter description" name="email" required></p>
+                            <p><label for="text" id="contentlbl">Content</label><input type = "text" id="contentupdateinputbox" placeholder="Enter your content" name="text" required></p>
                             <p><label for="text" id="citation">Insert citation if any:</label><input type = "text" id="citationinputbox">
                             <!--<p><label for="text" id="upload">Upload cover images</label><input type = "file" multiple = "true" accept = "image/*" id = "finput" onchange = "upload()" id="uploadbox"></p>
                             -->
-                            <p><button type="submit" id="postarticle">Confirm</button>
+                            <p><button type="submit" id="updatearticle">Confirm</button>
                         </form>
                     </div>    
                 </section>
@@ -244,5 +246,7 @@ TODO: Add SDKs for Firebase products that you want to use
 <!-- // <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 // <script src="./Firestore.js"></script> -->
 <!-- <script src="./retrievemessage.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 <script src="./Integration/post.js"></script> -->
+<script src="./Integration/retrieveposts.js"></script> -->
 </body>
